@@ -153,6 +153,7 @@ body {
     width: 100%;
     background-color: #F2F2F2;
     padding: 2em 0;
+    margin-bottom: 20em;
 }
 
 .advantages-block h2{
@@ -188,6 +189,7 @@ body {
     background-color: #fff;
     padding-top: 1em;
     font-size:1.5em;
+    padding-bottom: 5em;
 }
 
 .club-cards-block h2{
@@ -210,6 +212,10 @@ body {
 
 .club-card-item ul{
     list-style-type: none;
+}
+
+.club-card-item hr {
+    width: 90%;
 }
 
 
