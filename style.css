@@ -184,6 +184,74 @@ body {
     font-family: 'Bellota Text', cursive;
 }
 
+.club-cards-block{
+    background-color: #fff;
+    padding-top: 1em;
+    font-size:1.5em;
+}
+
+.club-cards-block h2{
+    margin:0;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.club-cards-types{
+    width: 90%;
+    margin: 0 auto;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: 20%;
+    grid-column-gap: 1em; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.club-card-item ul{
+    list-style-type: none;
+}
+
+
+.club-cards-block h3,
+.club-cards-block h5{
+    text-align: center;
+    margin: 0;
+}  
+
+.club-cards-block hr{
+    margin: -1em auto 0;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #1f1209;
+	box-shadow: 0 20px 20px -20px #333;
+    
+}
+
+.footer{
+    width: 100%;
+    height:15em;
+    background-color: #171717;
+    border: 1px solid #171717;
+    display: flex;
+    align-items: center;
+}
+
+.footer-wrapper{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: auto;
+    margin-top: auto;
+    vertical-align:middle;
+}
+
+.footer-main{
+    color: #fff;
+    display: flex;
+    align-items: center
+}
 
  /* это для мелких экранов пикча вместо видео */
 /* @media (max-width: 767px) {
