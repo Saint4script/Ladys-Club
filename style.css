@@ -95,7 +95,7 @@ body {
 
 .mission-container {
     background-color: #fff;
-    margin-top: 10em;
+    margin-top: 20em;
     padding: auto 5em;
     border-top: #fff 1px solid;
 }
@@ -103,6 +103,7 @@ body {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 4em;
 }
 .mission hr {
     margin: 1em auto 5em;
@@ -111,6 +112,9 @@ body {
 	border: none;
 	border-bottom: 3px solid #1f1209;
     width: 100%;
+}
+.mission .mission-block ~hr{
+    margin: 0;
 }
 .mission-header {
     height: 5em;
@@ -145,6 +149,40 @@ body {
     text-align: center;
 }
 
+.advantages-block{
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 2em 0;
+}
+
+.advantages-block h2{
+    margin: 0;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.advantages-items{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: 33%;
+    grid-column-gap: 1em;
+}
+
+.advantages-items div{
+    padding: 1em;
+}
+
+.advantages-items div img{
+    display: block;
+    margin: 0 auto;
+}
+.advantages-items div p{
+    text-align: center;
+    font-family: 'Bellota Text', cursive;
+}
 
 
  /* это для мелких экранов пикча вместо видео */
