@@ -90,6 +90,9 @@ body {
         grid-auto-columns: 50%;
         grid-column-gap: 1em;
     }
+    .club-cards-block h5{
+        margin-bottom: -3em!important;
+    }
 } 
 
 .fullscreen-bg .logo-wrapper{
@@ -302,9 +305,6 @@ body {
     text-align: center;
     margin: 0;
 }  
-.club-cards-block h5{
-    margin-bottom: -3em;
-}
 
 .club-cards-block hr{
     margin: -1em auto 0;
