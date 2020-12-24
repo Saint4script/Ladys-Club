@@ -8,7 +8,10 @@ body {
     background-image: url("res/pics/girl-wallpaper.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
 }
 
 *,
@@ -19,45 +22,105 @@ body {
 
 .fullscreen-bg {
     overflow: hidden;
-    z-index: 1;
+    z-index: -100;
     position: relative;
+    height: 100px;
     width: 100%;
-    padding-top:0%;
-    padding-bottom: 0%;
+    padding-top:50%;
+
+}
+
+@media(max-width: 1920px){
+    *{
+        font-size: xx-large;
+    }
+} 
+@media(max-width: 1600px){
+    *{
+        font-size: x-large;
+    }
+} 
+@media(max-width: 1200px){
+    *{
+        font-size: large;
+    }
+} 
+
+@media(max-width: 1000px){
+    *{
+        font-size: small;
+    }
+} 
+@media(max-width: 600px){
+    *{
+        font-size: x-small;
+    }
+    .features-container {
+        flex-direction: column;
+    }
+    .advantages-items{
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: space-between; */
+
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)!important;
+        grid-auto-columns: 50%;
+        grid-column-gap: 1em;
+    }
+}
+@media(max-width: 350px){
+    *{
+        font-size: x-small;
+    }
+    .features-container {
+        flex-direction: column;
+    }
+    .advantages-items{
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: space-between; */
+
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)!important;
+        grid-auto-columns: 50%;
+        grid-column-gap: 1em;
+    }
+} 
+
+.fullscreen-bg .logo-wrapper{
+    height: 100%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 5;
+    background-image: url("res/pics/new-logo-res.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .overlay {
-    /* rgba(0,0,0,0.6) */
-    background: rgba(0,0,0,0.0); 
-    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
     top:0;
     left:0;
     width: 100%;
     height: 100%;
     z-index: 4;
-}
-.overlay h1 {
-    text-align:center;
-    color:#fff;
-    font-size: 4em;
-    margin-top:0;
-}
-
-.fullscreen-bg .logo-wrapper {
-    width: 20em;
-    height: 20em;
-    margin-right: auto;
-    margin-left: auto;
-    background-image: url("res/pics/logo-res.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-.fullscreen-bg__video {
-    /* position: absolute;
-    z-index: 9999999; */
-    width: 100%;
-    height: auto;
-  /* max-height: 100%; */
 }
 
 .main-container {
@@ -94,9 +157,8 @@ body {
 	
 
 .features-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 1em;
+    display: flex;
+    justify-content: space-between;
 }
 .features-container .feature-block p {
     text-align:center;
@@ -149,7 +211,6 @@ body {
     letter-spacing: 2px;
 }
 
-
 .mission-block .mission{
     padding-right: 5%;
     padding-left: 5%;
@@ -185,7 +246,7 @@ body {
     grid-column-gap: 1em;
 }
 
-.advantages-items div{
+.advantages-item{
     padding: 1em;
 }
 
@@ -215,16 +276,20 @@ body {
 .club-cards-types{
     width: 90%;
     margin: 0 auto;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-columns: 20%;
-    grid-column-gap: 1em; */
     display: flex;
     justify-content: space-around;
 }
 
 .club-card-item ul{
     list-style-type: none;
+    padding: 0 0 0 1em  ;
+}
+.club-card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+
 }
 
 .club-card-item hr {
@@ -237,6 +302,9 @@ body {
     text-align: center;
     margin: 0;
 }  
+.club-cards-block h5{
+    margin-bottom: -3em;
+}
 
 .club-cards-block hr{
     margin: -1em auto 0;
@@ -286,29 +354,3 @@ body {
 	    font-size: 40px;
 	}
 } */
-
-/**/
-.backToSitehereBtn{
-	display: block;
-	width: 150px;
-	height: 150px;
-	background: #01BC78;
-	text-align: center;
-	line-height: 170px;
-	font-size: 20px;
-	border-radius: 50%;
-	color:#fff;
-	position: absolute;
-	text-decoration: none;
-	top:-40px;
-	left:-40px;
-	transform:rotate(-45deg) scale(1);
-	transition:all 0.25s linear;
-}
-
-.backToSitehereBtn:hover {
-	text-decoration: none;
-	top:-10px;
-	left:-10px;
-	transform:rotate(-45deg) scale(1.3);
-}
