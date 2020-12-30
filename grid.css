@@ -280,20 +280,47 @@ body {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.club-card-item {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    border: 1px solid #acadad;
+    border-radius: 8%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.club-card-item:hover{
+    animation: club-card-item-animation 0.5s cubic-bezier(.42, 0, .58, 1);
+    transform: scale(1.05);
+    /* animation-timing-function: cubic-bezier(.42, 0, .58, 1); */
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+@keyframes club-card-item-animation {
+    30% {
+        transform: scale(1.01);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    80% {
+        transform: scale(0.98);
+    }
+    100% {
+        transform: scale(1.05);
+    }
 }
 
 .club-card-item ul{
     list-style-type: none;
     padding: 0 0 0 1em  ;
 }
-.club-card-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-around;
 
-}
 
 .club-card-item hr {
     width: 90%;
