@@ -12,6 +12,10 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
+    perspective: 1px;
+  height: 100vh;
+  /* overflow-x: hidden; */
+  overflow-y: auto;
 }
 
 *,
@@ -27,7 +31,8 @@ body {
     height: 100px;
     width: 100%;
     padding-top:50%;
-
+    box-shadow: 0 20px 20px -20px #333;
+    
 }
 
 @media(max-width: 1920px){
@@ -117,7 +122,7 @@ body {
 .overlay {
     display: flex;
     flex-direction: column;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.1);
     position: absolute;
     top:0;
     left:0;
@@ -132,13 +137,17 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
+    -webkit-box-shadow: inset 0px 76px 187px -67px rgba(197,182,204,1);
+    -moz-box-shadow: inset 0px 76px 187px -67px rgba(197,182,204,1);
+    box-shadow: inset 0px 76px 187px -67px rgba(197,182,204,1);
+    /* https://www.cssmatic.com/box-shadow */
 }
 
 .about-club {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .about-club h2 {
 	text-align: center;
@@ -149,7 +158,7 @@ body {
 	font-size: 20px;
 }
 .about-club hr {
-    margin: 2em auto 5em;
+    margin: 1em auto 2em;
 	padding: 0;
 	height: 50px;
 	border: none;
@@ -162,6 +171,9 @@ body {
 .features-container {
     display: flex;
     justify-content: space-between;
+}
+.features-container .feature-block {
+    padding: 1.5em;
 }
 .features-container .feature-block p {
     text-align:center;
@@ -263,7 +275,7 @@ body {
 }
 
 .club-cards-block{
-    background-color: #fff;
+    background-color: #F2F2F2;
     padding-top: 1em;
     font-size:1.5em;
     padding-bottom: 5em;
@@ -296,22 +308,25 @@ body {
 
 .club-card-item:hover{
     animation: club-card-item-animation 0.5s cubic-bezier(.42, 0, .58, 1);
-    transform: scale(1.05);
-    /* animation-timing-function: cubic-bezier(.42, 0, .58, 1); */
-    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-duration: 1.5s;
 }
 
 @keyframes club-card-item-animation {
     30% {
+        transform: scale(1.00);
+    }
+    30% {
         transform: scale(1.01);
     }
     50% {
-        transform: scale(1.05);
+        transform: scale(1.03);
     }
-    80% {
+    70% {
         transform: scale(0.98);
     }
-    100% {
+    90% {
         transform: scale(1.05);
     }
 }
@@ -343,6 +358,36 @@ body {
     
 }
 
+
+.club-cards-description-wrapper{
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+.club-cards-description{
+    padding: 1em;
+    width: 90%;
+    background-color: #F2F2F2;
+    margin-left: auto;
+    margin-right: auto;
+}
+.club-cards-description p {
+    width: 90%;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.club-cards-description h2 {
+    margin:0;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0em;
+    margin-top: 1em;
+}
+
+
 .footer{
     width: 100%;
     height:15em;
@@ -365,6 +410,14 @@ body {
     color: #fff;
     display: flex;
     align-items: center
+}
+
+.footer-media{
+    padding: 0.5em;
+}
+.media-item img{
+    width: 4em;
+    height: 4em;
 }
 
  /* это для мелких экранов пикча вместо видео */
