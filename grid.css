@@ -12,10 +12,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    perspective: 1px;
-  height: 100vh;
-  /* overflow-x: hidden; */
-  overflow-y: auto;
 }
 
 *,
@@ -28,11 +24,11 @@ body {
     overflow: hidden;
     z-index: -100;
     position: relative;
-    height: 100px;
+    height: 100vh;
     width: 100%;
     padding-top:50%;
     box-shadow: 0 20px 20px -20px #333;
-    
+    transform-style: inherit;
 }
 
 @media(max-width: 1920px){
@@ -387,10 +383,147 @@ body {
     margin-top: 1em;
 }
 
+.offer-block{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #fff;
+}
+.offer-block h2{
+    margin:0;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0em;
+    margin-top: 1em;
+}
+.offer-block ul{
+    list-style-type:none;
+    padding: 0 0 0 1em;
+    font-family: 'Poiret One', cursive;
+}
+.offer-block ul li {
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 5px;
+    padding-left: 7vw;
+    margin-top: 0.7em;
+}
+#one{
+    background: url("res/pics/icons/1.png") no-repeat;
+    background-size: contain;
+}
+#two{
+    background: url("res/pics/icons/2.png") no-repeat;
+    background-size: contain;
+}
+#three{
+    background: url("res/pics/icons/3.png") no-repeat;
+    background-size: contain;
+}
+#four{
+    background: url("res/pics/icons/4.png") no-repeat;
+    background-size: contain;
+}
+#five{
+    background: url("res/pics/icons/5.png") no-repeat;
+    background-size: contain;
+}
+#another{
+    background: url("res/pics/icons/silence_1.png") no-repeat;
+    background-size: contain;
+}
+.offer-block form{
+    min-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+
+
+
+.offer-block form label {
+    margin:4vh 0;
+    position:relative;
+    display:inline-block;
+  }
+    
+  .offer-block form label span {
+    padding:10px;
+    pointer-events: none;
+    position:absolute;
+    left:0;
+    top:0;
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity:0.5;
+  }
+  
+  .offer-block form label input {
+    padding:10px;
+    min-width: 50vw;
+    text-align: center;
+    border: 1px solid #acadad;
+    border-radius: 10px;
+    font-size: 1.3em;
+  }
+  
+  .offer-block form label input:focus + span, .offer-block form label input:not(:placeholder-shown) + span {
+    opacity:1;
+    transform: scale(1) translateY(-7vh) translateX(-1vw);
+    font-family: 'Poiret One', cursive;
+  }
+  .offer-block input[type="submit"]{
+    color: #fff;
+    border: 1px #fff solid;
+    min-width: 10em;
+    min-height: 3em;
+    border-radius: 40px;
+    text-align: center;
+    font-family: 'Bellota Text', cursive;
+    font-weight: 700;
+    text-transform:uppercase;
+    background-color: red;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+  }
+
+
+
+
+  .offer-block input[type="submit"]:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  .offer-block input[type="submit"]:active {
+    top: 1px;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+    box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+  }
+  @-webkit-keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+  }
+  @keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+  }
+
+
+
 
 .footer{
     width: 100%;
-    height:15em;
+    height:25vh;
     background-color: #171717;
     border: 1px solid #171717;
     display: flex;
