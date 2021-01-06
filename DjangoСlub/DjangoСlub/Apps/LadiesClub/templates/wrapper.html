@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap" rel="stylesheet">
+
+    <!--- для дополнителных подключений -->
+    {% block extrahead %}
+    {% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+
+    {% load static %}
+</head>  
+<body>
+    {% block fullscreen-bg %}{% endblock %}
+
+    {% block main %}{% endblock %}
+
+    {%block club-cards-description-wrapper%}{% endblock %}
+
+    {% block offer-block %} {% endblock %}
+
+
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-icon">
+                <img src="">
+            </div>
+            <div class="footer-main">
+                <p>
+                    Все права не защищены (все украдено)
+                </p>
+            </div>
+            <div class="footer-media">
+                <a class="media-item" href="https://vk.com/s_aint_for" target="_blank"><img src="/static/res/pics/icons/inst_logo.png"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
