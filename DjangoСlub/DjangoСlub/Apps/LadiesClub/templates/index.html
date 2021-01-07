@@ -18,256 +18,276 @@
 {% block fullscreen-bg %}
 <div class="fullscreen-bg">
 
-    <div class="overlay">
-        <div class="logo-wrapper"></div>
-    </div>
-    <video loop muted autoplay  class="fullscreen-bg__video">
-        <source src={% static "/res/video/Pexels_Videos_1959209.mp4" %} type="video/mp4">
-    </video>
-    
-</div> 
+  <div class="overlay">
+      <div class="logo-wrapper"></div>
+  </div>
+  <!-- poster="video/plane.jpg" -->
+  <video loop muted autoplay  class="fullscreen-bg__video">
+      <source src="/static/res/video/Pexels_Videos_1959209.mp4" type="video/mp4">
+  </video>
+  
+</div>
 {% endblock %}
 
 {% block main %}
 
 <div class="main">
-    <div class="main-container">
-        <div class="about-club">
-            <h2>Что такое Lady`s Club</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit animi, 
-                expedita natus, nam commodi veniam ullam? Odio voluptatibus cum pariatur 
-                magni ex a animi maxime minima asperiores reprehenderit ad, blanditiis,
-                eius corporis est tempora dolor accusantium, ullam perspiciatis debitis 
-                expedita.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis iusto
-                non unde at suscipit error amet voluptates eligendi, itaque tempora!
-            </p>
-            <hr>
-            <div class="features-container">
-                <div class="feature-block first-feature">
-                    <h2>First feature</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Odit consequatur, fuga quia eum sunt id laboriosam alias dolores, 
-                        magni maiores molestias labore fugiat tempora. Voluptate sunt cumque 
-                        ab omnis culpa atque delectus minima nisi quae vitae sit voluptatibus 
-                        illo nemo ipsam cum totam voluptatem quidem ratione, eaque eum est 
-                        assumenda.
-                    </p>
-                </div>
-                <div class="feature-block second-feature">
-                    <h2>First feature</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Odit consequatur, fuga quia eum sunt id laboriosam alias dolores, 
-                        magni maiores molestias labore fugiat tempora. Voluptate sunt cumque 
-                        ab omnis culpa atque delectus minima nisi quae vitae sit voluptatibus 
-                        illo nemo ipsam cum totam voluptatem quidem ratione, eaque eum est 
-                        assumenda.
-                    </p>
-                </div>
-                <div class="feature-block third-feature">
-                    <h2>Second feature</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Odit consequatur, fuga quia eum sunt id laboriosam alias dolores, 
-                        magni maiores molestias labore fugiat tempora. Voluptate sunt cumque 
-                        ab omnis culpa atque delectus minima nisi quae vitae sit voluptatibus 
-                        illo nemo ipsam cum totam voluptatem quidem ratione, eaque eum est 
-                        assumenda.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="mission-container">
-        <div class="mission">
-            <hr>
-            
-            <div class="mission-header">
-                <p>
-                    WOMEN ARE PATHETIC
-                </p>
-            </div>
-        
-            <div class="mission-block">
-                <p class="mission-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odio 
-                    fugit vero sint aperiam quae expedita laborum, quidem pariatur 
-                    quibusdam sit deserunt quas labore nostrum perferendis quis mollitia, 
-                    ipsum facere vero sint aperiam quae expedita laborum, quidem pariatur 
-                    quibusdam sit deserunt quas labore nostrum perferendis quis mollitia, 
-                    ipsum facere.
-                </p>
-            </div>
-            <hr>
-        </div>
-    </div>
+  <div class="main-container">
+      <div class="about-club">
+          <h2>Что такое Lady`s Club</h2>
+          <p>
+            Lady`s Club - это женский клуб, сообщество девушек с активной жизненной позицией,
+             стремящихся к саморазвитию и открытых к общению. Клуб работает в 3 
+             направлениях: вдохновение, саморазвитие и off-line общение. Ежемесячно 
+             в рамках клуба проводится 4 мероприятия, продолжительность каждого 2-3 
+             часа. Расписание мероприятий клуба составляется на 2 месяца вперед и 
+             учитывает каждое из направлений.
+          </p>
+          <hr>
+          <div class="features-container">
+              <div class="feature-block first-feature">
+                  <h3>-1-<br>Вдохновение</h3>
+                  <p>
+                    Порой у девушек опускаются руки и пропадает вера в свои силы. 
+                    Мы в клубе W. постоянно проводим такие мероприятия, после 
+                    которых открывается второе дыхание и появляется уверенность в 
+                    том что все возможно. В этом разделе ты найдешь уроки по 
+                    мотивации, планированию, стилю и красоте, необычные 
+                    мастер-классы от коучей и интересных спикеров, а также 
+                    workshop'ы от психологов и просто вдохновляющих личностей нашего
+                     города.
+                  </p>
+              </div>
+              <div class="feature-block second-feature">
+                  <h3>-2-<br>Саморазвитие</h3>
+                  <p>
+                    Каждая девушка в своей жизни играет множество ролей: дочь, мама,
+                     жена, карьеристка... И зачастую пытается быть идеальной для 
+                     всех, погружается с головой в свою роль, забывая при этом кто 
+                     она на самом деле. Что интересует ее как личность? А в чем твоя
+                      индивидуальность? Какая ты на самом деле? Чем бы ты хотела 
+                      заниматься в свободное время? И вообще есть ли у тебя это 
+                      свободное от ролей время? В этом разделе ты найдешь интересные
+                       курсы, которые позволят тебе самосовершенствоваться в 
+                       различных сферах и чувствовать себя многогранной личностью. 
+                       Курсы ораторского искусства, самообороны, финансовой 
+                       грамотности для девушек, "Make-up для себя", фотокурсы - это 
+                       лишь малая часть того что мы приготовили для тебя.
+                  </p>
+              </div>
+              <div class="feature-block third-feature">
+                  <h3>-3-<br>Off-line общение</h3>
+                  <p>
+                    На сегодняшний день любой среднестатистический человек 90% 
+                    своего общения ведет через социальные сети и лишь 10% уделяет 
+                    личному общению. Мы в клубе W. за ценность личного общения, 
+                    когда находишь новые интересные знакомства и видишь человека 
+                    таким какой он есть, а не набор идеальных картинок вместо 
+                    человека. В этом разделе ты найдешь развлекательные мероприятия 
+                    клуба W. - дегустация вин, чемпионат по игре "Крокодил", 
+                    кулинарные мастер-классы, тематические вечеринки. Эти и другие 
+                    мероприятия помогут тебе поближе познакомиться с участницами 
+                    клуба, насладиться живым общением и подзарядиться хорошим 
+                    настроением.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="mission-container">
+      <div class="mission">
+          <hr>
+          
+          <div class="mission-header">
+              <h2>
+                  WOMEN ARE PATHETIC
+              </h2>
+          </div>
+      
+          <div class="mission-block">
+              <p class="mission-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolor voluptatibus facilis quas, suscipit in deleniti modi. 
+                Deserunt harum necessitatibus laboriosam rem beatae facere nemo 
+                iure modi? Culpa suscipit alias atque.
+                <br>
+                Создать пространство, где девушки смогут черпать силы, энергию, 
+                знания и говорить открыто о важном.
+                <br>
+                Вдохновлять женщин на личностный и духовный рост и делать их жизнь 
+                интереснее.
+              </p>
+          </div>
+          <hr>
+      </div>
+  </div>
 
-    <div class="advantages-block">
-        <h2>
-            WHY WOMEN ARE PATHETIC
-        </h2>
-        <div class="advantages-items">
-            <div class="advantages-item">
-                <img src="/static/res/pics/woman.png">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid praesentium necessitatibus voluptatibus similique commodi doloribus nulla itaque, repudiandae dicta assumenda culpa odio laudantium maiores placeat.
-                </p>
-                
-            </div>
-            <div class="advantages-item">
-                <img src="/static/res/pics/woman.png">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid praesentium necessitatibus voluptatibus similique commodi doloribus nulla itaque, repudiandae dicta assumenda culpa odio laudantium maiores placeat.
-                </p>
-                
-            </div>
-            <div class="advantages-item">
-                <img src="/static/res/pics/woman.png">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid praesentium necessitatibus voluptatibus similique commodi doloribus nulla itaque, repudiandae dicta assumenda culpa odio laudantium maiores placeat.
-                </p>
-                
-            </div>
-            <div class="advantages-item">
-                <img src="/static/res/pics/woman.png">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid praesentium necessitatibus voluptatibus similique commodi doloribus nulla itaque, repudiandae dicta assumenda culpa odio laudantium maiores placeat.
-                </p>
-                
-            </div>
-            <div class="advantages-item">
-                <img src="/static/res/pics/woman.png">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid praesentium necessitatibus voluptatibus similique commodi doloribus nulla itaque, repudiandae dicta assumenda culpa odio laudantium maiores placeat.
-                </p>
-                
-            </div>
-            <div class="advantages-item">
-                <img src="/static/res/pics/woman.png">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid praesentium necessitatibus voluptatibus similique commodi doloribus nulla itaque, repudiandae dicta assumenda culpa odio laudantium maiores placeat.
-                </p>
-                
-            </div>
-        </div>
-    </div>
-    
-    <div class="club-cards-block">
-        <h2>
-            Наши клубные карты
-        </h2>
-        <div class="club-cards-types">
-            <div class="club-card-item">
-                <h3>
-                    3 месяца
-                </h3>
-                <h5>
-                    12 мероприятий
-                </h5>
-                <hr>
-                <ul>
-                    <li>
-                        - Посещение мероприятий
-                    </li>
-                    <li>
-                        - Чат W.HELP
-                    </li>
-                    <li>
-                        - Книжный клуб
-                    </li>
-                    <li>
-                        - Telegram-канал основных новостей
-                    </li>
-                    <li>
-                        - Серебряный бейдж
-                    </li>
-                </ul>
-            </div>
+  <div class="advantages-block">
+      <h2>
+          Преимущества Lady`s Club
+      </h2>
+      <div class="advantages-items">
+          <div class="advantages-item">
+              <img src="/static/res/pics/woman.png">
+              <p>
+                Личное общение с интересными и успешными девушками со схожими интересами
+              </p>
+              
+          </div>
+          <div class="advantages-item">
+              <img src="/static/res/pics/woman.png">
+              <p>
+                Личностный рост благодаря мероприятиям с приглашенными коучами, спикерами и наставниками
+              </p>
+              
+          </div>
+          <div class="advantages-item">
+              <img src="/static/res/pics/woman.png">
+              <p>
+                Вдохновение и уверенность в собственных силах
+              </p>
+              
+          </div>
+          <div class="advantages-item">
+              <img src="/static/res/pics/woman.png">
+              <p>
+                Новые полезные и в то же время практичные знания в рамках образовательных программ
+              </p>
+              
+          </div>
+          <div class="advantages-item">
+              <img src="/static/res/pics/woman.png">
+              <p>
+                W. - double you - сделай свою жизнь вдвое интереснее и насыщеннее
+              </p>
+              
+          </div>
+          <div class="advantages-item">
+              <img src="/static/res/pics/woman.png">
+              <p>
+                Самореализация и возможность быть самой собой
+              </p>
+              
+          </div>
+      </div>
+  </div>
+  
+  <div class="club-cards-block">
+      <h2>
+          Наши клубные карты
+      </h2>
+      <div class="club-cards-types">
+          <div class="club-card-item">
+              <h3>
+                  3 месяца
+              </h3>
+              <h5>
+                  12 мероприятий
+              </h5>
+              <hr>
+              <ul>
+                  <li>
+                      - Посещение мероприятий
+                  </li>
+                  <li>
+                      - Чат W.HELP
+                  </li>
+                  <li>
+                      - Книжный клуб
+                  </li>
+                  <li>
+                      - Telegram-канал основных новостей
+                  </li>
+                  <li>
+                      - Серебряный бейдж
+                  </li>
+              </ul>
+          </div>
 
-            <div class="club-card-item">
-                <h3>
-                    6 месяцев
-                </h3>
-                <h5>
-                    24 мероприятий
-                </h5>
-                <hr>
-                <ul>
-                    <li>
-                        - Посещение мероприятий
-                    </li>
-                    <li>
-                        - Чат W.HELP
-                    </li>
-                    <li>
-                        - Книжный клуб
-                    </li>
-                    <li>
-                        - Telegram-канал основных новостей
-                    </li>
-                    <li>
-                        - Серебряный бейдж
-                    </li>
-                </ul>
-            </div>
+          <div class="club-card-item">
+              <h3>
+                  6 месяцев
+              </h3>
+              <h5>
+                  24 мероприятий
+              </h5>
+              <hr>
+              <ul>
+                  <li>
+                      - Посещение мероприятий
+                  </li>
+                  <li>
+                      - Чат W.HELP
+                  </li>
+                  <li>
+                      - Книжный клуб
+                  </li>
+                  <li>
+                      - Telegram-канал основных новостей
+                  </li>
+                  <li>
+                      - Серебряный бейдж
+                  </li>
+              </ul>
+          </div>
 
-            <div class="club-card-item">
-                <h3>
-                    12 месяцев
-                </h3>
-                <h5>
-                    48 мероприятий
-                </h5>
-                <hr>
-                <ul>
-                    <li>
-                        - Посещение мероприятий
-                    </li>
-                    <li>
-                        - Чат W.HELP
-                    </li>
-                    <li>
-                        - Книжный клуб
-                    </li>
-                    <li>
-                        - Telegram-канал основных новостей
-                    </li>
-                    <li>
-                        - Серебряный бейдж
-                    </li>
-                </ul>
-            </div>
-        </div>
+          <div class="club-card-item">
+              <h3>
+                  12 месяцев
+              </h3>
+              <h5>
+                  48 мероприятий
+              </h5>
+              <hr>
+              <ul>
+                  <li>
+                      - Посещение мероприятий
+                  </li>
+                  <li>
+                      - Чат W.HELP
+                  </li>
+                  <li>
+                      - Книжный клуб
+                  </li>
+                  <li>
+                      - Telegram-канал основных новостей
+                  </li>
+                  <li>
+                      - Серебряный бейдж
+                  </li>
+              </ul>
+          </div>
+      </div>
 
-    </div>
+  </div>
 
-</div>     
+</div> 
 
 {% endblock %} 
 
 {%block club-cards-description-wrapper%}
 
 <div class="club-cards-description-wrapper">
-    <div class="club-cards-description">
-        <h2>Клубная карта <br> Lady`s CLUB</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, dolores.
-             Facere sit ullam sint, in amet nisi voluptatum nobis animi doloremque iusto 
-             laboriosam voluptas ratione laudantium qui quas, officiis ducimus. 
-             Repudiandae praesentium debitis dolor ipsam mollitia quo iure ipsum 
-             dignissimos provident. Repellat et eius vitae ad. Itaque facere est v
-             oluptatum porro assumenda excepturi distinctio similique unde labore fugit
-              repudiandae eligendi dolorem, repellat, nobis necessitatibus totam placeat
-               aut, deleniti fuga? Consequuntur?
-        </p>
-    </div>
+  <div class="club-cards-description">
+      <h2>Клубная карта <br> Lady`s CLUB</h2>
+      <p>
+        Приобретение клубной карты - это инвестиция в саму себя. Каждую неделю ты 
+        сможешь посещать мероприятия, которые обеспечат тебе личностный рост. 
+        Мы заинтересованы в долгосрочных отношениях. Ведь тогда клуб W. будет 
+        действительно сообществом девушек со схожими интересами. Поэтому главное 
+        правило клуба - никогда не рассказывай о клубе тому, кто вряд ли тебя поймет
+         в твоем стремлении развиваться!
+         <br>
+         Если вдруг ты не сможешь посещать занятия из-за командировки или болезни 
+         (своей или ребенка), то в рамках клубной карты на 12 месяцев есть услуга 
+         "заморозка" - просто предупреди, и мы продлим тебе срок действия твоей 
+         клубной карты. Нам не нужны справки от врачей или командировочные листы. 
+         Это доверие.
+      </p>
+  </div>
 </div> 
+
 
 {% endblock %}
 
@@ -275,37 +295,37 @@
 {% block offer-block %}
 
 <div class="offer-block">
-    <h2>Как вступить в Lady`s Club?</h2>
-    <ul>
-        <li id="one">Отправить заявку, заполнив форму ниже</li>
-        <li id="two">Прийти на мероприятие и заключить договор (не забудь взять паспорт)</li>
-        <li id="three">Оплатить взнос банковской картой на сайте</li>
-        <li id="four">На следующем мероприятии получить именную клубную карту</li>
-        <li id="five">Пользоваться всеми преимуществами клуба</li>
-        <li id="another">Никому не рассказывать о клубе</li>
-    </ul>
-    <form>
-        <label>
-            <input type="text" placeholder=" ">
-            <span>ФИО</span>
-        </label>
-        <label>
-            <input type="tel" placeholder=" ">
-            <span>Номер телефона</span>
-        </label>
-        <label>
-            <input type="email" placeholder=" ">
-            <span>Электрнонная почта</span>
-        </label>
-        <label>
-            <input type="text" placeholder=" ">
-            <span>Ваши вопросы</span>
-        </label>
-        
-        <input type="submit" value="Отправить">
-        <span></span>
-        
-    </form>
-</div>
+  <h2>Как вступить в Lady`s Club?</h2>
+  <ul>
+      <li id="one">Отправить заявку, заполнив форму ниже</li>
+      <li id="two">Прийти на мероприятие и заключить договор (не забудь взять паспорт)</li>
+      <li id="three">Оплатить взнос банковской картой на сайте</li>
+      <li id="four">На следующем мероприятии получить именную клубную карту</li>
+      <li id="five">Пользоваться всеми преимуществами клуба</li>
+      <li id="another">Никому не рассказывать о клубе</li>
+  </ul>
+  <form>
+      <label>
+          <input type="text" placeholder=" ">
+          <span>ФИО</span>
+      </label>
+      <label>
+          <input type="tel" placeholder=" ">
+          <span>Номер телефона</span>
+      </label>
+      <label>
+          <input type="email" placeholder=" ">
+          <span>Электрнонная почта</span>
+      </label>
+      <label>
+          <input type="text" placeholder=" ">
+          <span>Ваши вопросы</span>
+      </label>
+      
+      <input type="submit" value="Отправить">
+      <span></span>
+      
+  </form>
+</div> 
 
 {% endblock %}
