@@ -3,9 +3,9 @@
 {% load static %}
 
 {% block extrahead %}
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link type='text/css' rel='stylesheet' href={% static "/css/style.css" %}> 
-
+    <script src = {% static "/js/index.js" %}></script>
 {% endblock %}
 
 {% block title %}
@@ -284,25 +284,26 @@
         <li id="five">Пользоваться всеми преимуществами клуба</li>
         <li id="another">Никому не рассказывать о клубе</li>
     </ul>
-    <form>
+    <form id = "registration_form" method = "POST" name = "registration_form">
+        {% csrf_token %}
         <label>
-            <input type="text" placeholder=" ">
+            <input type="text" placeholder=" " name = "fio">
             <span>ФИО</span>
         </label>
         <label>
-            <input type="tel" placeholder=" ">
+            <input type="tel" placeholder=" " name = "phone_number">
             <span>Номер телефона</span>
         </label>
         <label>
-            <input type="email" placeholder=" ">
+            <input type="email" placeholder=" " name = "email">
             <span>Электрнонная почта</span>
         </label>
         <label>
-            <input type="text" placeholder=" ">
+            <input type="text" placeholder=" " name = "questions">
             <span>Ваши вопросы</span>
         </label>
         
-        <input type="submit" value="Отправить">
+        <input type="button" value="Отправить" onclick = sendForm()>
         <span></span>
         
     </form>
