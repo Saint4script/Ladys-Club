@@ -3,11 +3,19 @@
 
 @font-face {
   font-family: 'Gilroy';
+<<<<<<< HEAD
   src: url('Gilroy/Gilroy-Bold.eot');
   src: local('Gilroy Bold'), local('Gilroy-Bold'),
       url('Gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
       url('Gilroy/Gilroy-Bold.woff') format('woff'),
       url('Gilroy/Gilroy-Bold.ttf') format('truetype');
+=======
+  src: url('/static/res/fonts/Gilroy/Gilroy-Bold.eot');
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+      url('/static/res/fonts/Gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/static/res/fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+      url('/static/res/fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+>>>>>>> 61faba009ee29f8f415b2f0c5da97dfce7b1136d
   font-weight: bold;
   font-style: normal;
 }
@@ -432,6 +440,7 @@ h2 {
     margin-top: 0.7em;
 }
 #one{
+<<<<<<< HEAD
     background: url("res/pics/icons/1.png") no-repeat;
     background-size: 2.5em;
 }
@@ -453,6 +462,29 @@ h2 {
 }
 #another{
     background: url("res/pics/icons/silence_1.png") no-repeat;
+=======
+    background: url("/static/res/pics/icons/1.png") no-repeat;
+    background-size: 2.5em;
+}
+#two{
+    background: url("/static/res/pics/icons/2.png") no-repeat;
+    background-size: 2.5em;
+}
+#three{
+    background: url("/static/res/pics/icons/3.png") no-repeat;
+    background-size: 2.5em;
+}
+#four{
+    background: url("/static/res/pics/icons/4.png") no-repeat;
+    background-size: 2.5em;
+}
+#five{
+    background: url("/static/res/pics/icons/5.png") no-repeat;
+    background-size: 2.5em;
+}
+#another{
+    background: url("/static/res/pics/icons/silence_1.png") no-repeat;
+>>>>>>> 61faba009ee29f8f415b2f0c5da97dfce7b1136d
     background-size: 2.5em;
 }
 .offer-block form{
