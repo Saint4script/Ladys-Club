@@ -1,6 +1,9 @@
 function sendForm(){
     let fd = new FormData(registration_form);
-
+    // let loadGif = $.getElementByClass("gif-container")[0];
+    $('.gif-container').css('display','block');
+    $('.gif-shadow').css('display','block');
+    $('.fieldset')[0].disabled=true;
     $.ajax({
         type: "POST",
         url: '/send_form/',
@@ -8,6 +11,9 @@ function sendForm(){
         contentType: false,
         processData: false
     }).done(function (result) {
+      $('.gif-container').css('display','none');
+      $('.gif-shadow').css('display','none');
+      $('.fieldset')[0].disabled=false;
         if (result["status"] == "Ok"){
             alert("Создали");      
         }else{

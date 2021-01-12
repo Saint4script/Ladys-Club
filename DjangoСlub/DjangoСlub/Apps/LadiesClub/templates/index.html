@@ -306,6 +306,7 @@
     </ul>
     <form id = "registration_form" method = "POST" name = "registration_form">
         {% csrf_token %}
+        <fieldset class="fieldset">
         <label>
             <input type="text" placeholder=" " name = "fio">
             <span>ФИО</span>
@@ -325,8 +326,15 @@
         
         <input type="button" value="Отправить" onclick = sendForm()>
         <span></span>
-        
+      </fieldset>
     </form>
+
+    
+    <div class="gif-shadow">
+
+      <div class="gif-container"></div>
+
+    </div>
 </div>
 
 {% endblock %}

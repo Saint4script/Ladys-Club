@@ -421,6 +421,7 @@ h2 {
 }
 .offer-block ul{
     list-style-type:none;
+    min-height: fit-content;
     padding: 0 0 0 1em;
     font-family: 'Poiret One', cursive;
 }
@@ -432,48 +433,52 @@ h2 {
     margin-top: 0.7em;
 }
 #one{
-    background: url("res/pics/icons/1.png") no-repeat;
-    background-size: 2.5em;
+    background: url("/static/res/pics/icons/1.png") no-repeat;
+    background-size: 1.95em;
+    background-position: left center;
 }
 #two{
-    background: url("res/pics/icons/2.png") no-repeat;
-    background-size: 2.5em;
+    background: url("/static/res/pics/icons/2.png") no-repeat;
+    background-size: 1.95em;
+    background-position: left center;
 }
 #three{
-    background: url("res/pics/icons/3.png") no-repeat;
-    background-size: 2.5em;
+    background: url("/static/res/pics/icons/3.png") no-repeat;
+    background-size: 1.95em;
+    background-position: left center;
 }
 #four{
-    background: url("res/pics/icons/4.png") no-repeat;
-    background-size: 2.5em;
+    background: url("/static/res/pics/icons/4.png") no-repeat;
+    background-size: 1.95em;
+    background-position: left center;
 }
 #five{
-    background: url("res/pics/icons/5.png") no-repeat;
-    background-size: 2.5em;
+    background: url("/static/res/pics/icons/5.png") no-repeat;
+    background-size: 1.95em;
+    background-position: left center;
 }
 #another{
-    background: url("res/pics/icons/silence_1.png") no-repeat;
-    background-size: 2.5em;
+    background: url("/static/res/pics/icons/silence_1.png") no-repeat;
+    background-size: 1.95em;
+    background-position: left center;
 }
-.offer-block form{
+.offer-block fieldset{
     min-width: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-top: 1em;
+    border:none;
 }
 
-
-
-
-.offer-block form label {
+.offer-block label {
     margin:4vh 0;
     position:relative;
     display:inline-block;
   }
     
-  .offer-block form label span {
+  .offer-block span {
     padding:10px;
     pointer-events: none;
     position:absolute;
@@ -485,7 +490,7 @@ h2 {
     opacity:0.5;
   }
   
-  .offer-block form label input {
+  .offer-block input {
     padding:10px;
     min-width: 50vw;
     text-align: center;
@@ -494,7 +499,7 @@ h2 {
     font-size: 1.3em;
   }
   
-  .offer-block form label input:focus + span, .offer-block form label input:not(:placeholder-shown) + span {
+  .offer-block input:focus + span, .offer-block  input:not(:placeholder-shown) + span {
     opacity:1;
     transform: scale(1) translateY(-7vh) translateX(-1vw);
     font-family: 'Poiret One', cursive;
@@ -516,9 +521,6 @@ h2 {
     animation: pulsate 1.2s linear infinite;
   }
 
-
-
-
   .offer-block input[type="button"]:hover {
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
@@ -536,6 +538,38 @@ h2 {
   @keyframes pulsate {
     50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
   }
+
+  .gif-container{
+    width: 400px;
+    height: 400px;
+    background-image: url("/static/res/pics/trans-letter.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 40;
+    margin: 22vh auto;
+  }
+  .gif-shadow{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 40;
+    color: #fff;
+    opacity: 1;
+    pointer-events: none;
+    background-color: rgba(51,51,51,.75);
+  }
+
+  
 
 
 
