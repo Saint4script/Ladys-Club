@@ -2,10 +2,13 @@
 
 {% load static %}
 
+
 {% block extrahead %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link type='text/css' rel='stylesheet' href={% static "/css/style.css" %}> 
     <script src = {% static "/js/index.js" %}></script>
+    <link type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script>
 {% endblock %}
 
 {% block title %}
@@ -287,6 +290,46 @@
       </p>
   </div>
 </div> 
+
+
+{% endblock %}
+
+
+{% block news %}
+
+<div class="news-wrapper">
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+
+        <!-- <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div> -->
+        
+        {% for news_item in news %}
+            <div class="gallery-cell">
+                <div class="image" style="background-image: url({{news_item.news_image.url}});"></div>
+                <div class="date">
+                    <p>
+                        
+                        {{news_item.news_dates}}
+                    </p>
+                </div>
+                <div class="header">
+                    <p>
+                        {{news_item.news_header}}
+                    </p>
+                </div>
+                <div class="description">
+                    <p>
+                        {{news_item.news_text}}
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+</div>
 
 
 {% endblock %}

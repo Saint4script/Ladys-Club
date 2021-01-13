@@ -176,7 +176,6 @@ h2 {
     width: 100%;
 }
 	
-
 .features-container {
     display: flex;
     justify-content: space-between;
@@ -402,6 +401,69 @@ h2 {
     margin-top: 1em;
 }
 
+.news-wrapper{
+    background: #fff;
+    width:100vw;
+}
+
+.gallery  {
+    width:90vw;
+    margin:auto;
+
+}
+  
+.gallery-cell {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+
+    width: 33%;
+    height: 70vh;
+    margin-right: 20px;
+    counter-increment: gallery-cell;
+}
+
+
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    /* content: counter(gallery-cell); */
+    line-height: 70vh;
+    /* font-size: 80px; */
+    color: white;
+}
+
+.gallery-cell .image{
+    position: absolute;
+    width:100%;
+    height: 40%;
+    
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ 
+.gallery-cell .date{
+    padding-top: 40%;
+
+}
+/*
+.gallery-cell .header{
+    flex:1;
+
+}
+
+.gallery-cell .description{
+    flex:1;
+
+} */
+
+
+
 .offer-block{
     width: 100vw;
     display: flex;
@@ -434,32 +496,32 @@ h2 {
 }
 #one{
     background: url("/static/res/pics/icons/1.png") no-repeat;
-    background-size: 1.95em;
+    background-size: 1.85em;
     background-position: left center;
 }
 #two{
     background: url("/static/res/pics/icons/2.png") no-repeat;
-    background-size: 1.95em;
+    background-size: 1.85em;
     background-position: left center;
 }
 #three{
     background: url("/static/res/pics/icons/3.png") no-repeat;
-    background-size: 1.95em;
+    background-size: 1.85em;
     background-position: left center;
 }
 #four{
     background: url("/static/res/pics/icons/4.png") no-repeat;
-    background-size: 1.95em;
+    background-size: 1.85em;
     background-position: left center;
 }
 #five{
     background: url("/static/res/pics/icons/5.png") no-repeat;
-    background-size: 1.95em;
+    background-size: 1.85em;
     background-position: left center;
 }
 #another{
     background: url("/static/res/pics/icons/silence_1.png") no-repeat;
-    background-size: 1.95em;
+    background-size: 1.85em;
     background-position: left center;
 }
 .offer-block fieldset{

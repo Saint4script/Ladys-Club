@@ -6,12 +6,19 @@ from email.header import Header
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.template.context_processors import csrf
+
 from .message import get_message
+from .models import News
 
 
 def show_main_page(request):
     info = {}
     info.update(csrf(request))
+
+    news = News.objects.all()
+    info['news'] = news
+    print(news[0].news_image.url)
+
     return render(request, 'index.html', info)
 
 
