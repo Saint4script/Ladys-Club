@@ -55,24 +55,34 @@ h2 {
     *{
         font-size: xx-large;
     }
+    .gallery-cell .description p{
+      padding: 2em;
+    } 
 } 
 @media(max-width: 1600px){
     *{
         font-size: x-large;
     }
+    .gallery-cell .description p{
+      padding: 1.5em;
+    } 
 } 
 @media(max-width: 1100px){
     *{
         font-size: large;
     }
-  
+    .gallery-cell .description p{
+      padding: 1em;
+    } 
 } 
 
 @media(max-width: 1000px){
     *{
         font-size: small;
     }
-
+    .gallery-cell .description p{
+      padding: 1em;
+    } 
 } 
 @media(max-width: 600px){
     *{
@@ -87,6 +97,25 @@ h2 {
         grid-auto-columns: 50%;
         grid-column-gap: 1em;
     }
+    .gallery-cell {
+      display: grid;
+      grid-template-rows: 30vh 5vh 7vh 28vh;
+      width: 45%;
+    }
+    .gallery-cell .date p{
+      font-size: .8em;
+    }
+    
+    .gallery-cell .header p{
+      font-size: 0.9em;
+    }
+    
+    .gallery-cell .description p{
+      text-align:start;
+      font-size: .7em;
+      padding: 0;
+    } 
+
 }
 @media(max-width: 350px){
     *{
@@ -96,12 +125,6 @@ h2 {
         flex-direction: column;
     }
     .advantages-items{
-        /* display: flex;
-        flex-wrap: wrap;
-        flex-basis: 50%;
-        justify-content: space-between; */
-
-
         display: grid;
         grid-template-columns: repeat(1, 1fr)!important;
         grid-auto-columns: 50%;
@@ -110,7 +133,23 @@ h2 {
     .club-cards-block h5{
         margin-bottom: -3em!important;
     }
-} 
+    .gallery-cell {
+      display: grid;
+      grid-template-rows: 22vh 3vh 22vh 23vh;
+      width: 45%;
+    }
+    .gallery-cell .date p{
+      font-size: .8em;
+    }
+    .gallery-cell .header p{
+      font-size: 0.7em;
+    }
+    .gallery-cell .description p{
+      text-align:start;
+      font-size: .7em;
+      padding: 0;
+    } 
+}
 
 .fullscreen-bg .logo-wrapper{
     height: 100%;
@@ -169,7 +208,7 @@ h2 {
 .about-club hr {
     margin: 1em auto 2em;
 	padding: 0;
-	height: 50px;
+  height: 50px;
 	border: none;
 	border-bottom: 1px solid #1f1209;
 	box-shadow: 0 20px 20px -20px #333;
@@ -184,6 +223,7 @@ h2 {
 }
 .feature-block{
   flex:1;
+  font-size: 0.9em;
 }
 .second-feature {
     border-left: 1px solid black; 
@@ -407,60 +447,58 @@ h2 {
 }
 
 .gallery  {
-    width:90vw;
+    width:95vw;
     margin:auto;
-
 }
   
 .gallery-cell {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-
-    width: 33%;
-    height: 70vh;
+    display: grid;
+    grid-template-rows: 30vh 5vh 10vh 25vh;
+    overflow-y:hidden;
+    width: 32%;
+    height: 75vh;
     margin-right: 20px;
     counter-increment: gallery-cell;
 }
-
 
 /* cell number */
 .gallery-cell:before {
     display: block;
     text-align: center;
-    /* content: counter(gallery-cell); */
-    line-height: 70vh;
-    /* font-size: 80px; */
     color: white;
 }
 
+.gallery-cell div, .gallery-cell p {
+  margin: 0;
+  padding: 0;
+}
+
 .gallery-cell .image{
-    position: absolute;
-    width:100%;
-    height: 40%;
-    
-    
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
  
-.gallery-cell .date{
-    padding-top: 40%;
-
-}
-/*
-.gallery-cell .header{
-    flex:1;
-
+.gallery-cell .date p{
+  text-align: center;
+  font-size: .6em;
+  font-style: italic;
+  font-weight: 200;
 }
 
-.gallery-cell .description{
-    flex:1;
+.gallery-cell .header p{
+  text-align: center;
+  text-transform: uppercase;
+}
 
-} */
+.gallery-cell .description p{
+  text-align:start;
+  font-size: .8em;
+} 
 
 
 
@@ -569,8 +607,8 @@ h2 {
   .offer-block input[type="button"]{
     color: #fff;
     border: 1px #fff solid;
-    min-width: 10em;
-    min-height: 3em;
+    min-width: 8em;
+    min-height: 2em;
     border-radius: 40px;
     text-align: center;
     font-family: 'Bellota Text', cursive;
