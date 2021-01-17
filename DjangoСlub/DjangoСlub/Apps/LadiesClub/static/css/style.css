@@ -36,7 +36,7 @@ body {
 
 h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.7em;
   text-transform: uppercase;
   font-family: "Arsenal", "Gilroy", sans-serif;
 }
@@ -46,7 +46,7 @@ h2 {
     z-index: -100;
     position: relative;
     width: 100%;
-    padding-top:50%;
+    padding-top: 50%;
     box-shadow: 0 20px 20px -20px #333;
     transform-style: inherit;
 }
@@ -166,7 +166,7 @@ h2 {
 
 .fullscreen-bg__video {
     position: absolute;
-    top: 0;
+    top: -400px;
     left: 0;
     width: 100%;
 }
@@ -202,6 +202,8 @@ h2 {
 .about-club p {
 	text-align: center;
   font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
   padding-left: 7%;
   padding-right: 7%;
 }
@@ -238,7 +240,7 @@ h2 {
     font-size: 1.2em;
     text-transform: uppercase;
     font-family: "Arsenal", "Gilroy", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .mission-container {
@@ -289,9 +291,10 @@ h2 {
     text-align: center;
 }
 .mission-text {
-    color: #ff6b6b;
-    font-family: 'Poiret One', cursive;
-    font-size: 1.2em;
+    color: #BA0B0B;
+    font-family: 'Roboto Condensed', cursive; /*'Poiret One', cursive*/ /*'Bellota Text', cursive*/
+    font-size: 1.7em;
+    font-weight: 100;
     text-align: center;
 }
 
@@ -326,14 +329,15 @@ h2 {
     margin: 0 auto;
 }
 .advantages-items div p{
-  font-size: 0.8em;
+    font-size: 0.8em;
     text-align: center;
-    font-family: 'Bellota Text', cursive;
+    font-family: 'Poiret One', cursive;
+    font-weight: 500;
 }
-
+/*TODO  Choose color to this block _____________+++++++++++++++++++++++++++++++++++++++++____________________________________*/
 .club-cards-block{
     background-color: #F2F2F2;
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 5em;
 }
 
@@ -358,6 +362,7 @@ h2 {
     border: 1px solid #acadad;
     border-radius: 8%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /* background-color: #ffffff; */
 }
 
 .club-card-item:hover{
@@ -388,6 +393,8 @@ h2 {
 .club-card-item ul{
     list-style-type: none;
     padding: 0 0 0 1em  ;
+    font-family: 'Poiret One', cursive;
+    font-weight: 500;
 }
 
 
@@ -400,6 +407,9 @@ h2 {
 .club-cards-block h5{
     text-align: center;
     margin: 0;
+    /* text-transform: uppercase; */
+    font-family: "Arsenal", "Gilroy", sans-serif;
+    font-weight: 600;
 }  
 
 .club-cards-block hr{
@@ -417,6 +427,7 @@ h2 {
     width: 100%;
     background-color: #fff;
     padding-bottom: 2em;
+    /* margin-top: 12em; */
     padding-top: 2em;
 }
 .club-cards-description{
@@ -442,10 +453,14 @@ h2 {
 }
 
 .news-wrapper{
-    background: #fff;
+    background-color: #F2F2F2;
     width:100vw;
+    padding: 1em 0;
 }
 
+.flickity-page-dots{
+  padding: 0.75em!important;
+}
 .gallery  {
     width:95vw;
     margin:auto;
@@ -515,7 +530,6 @@ h2 {
 .offer-block h2{
     margin:0;
     text-align: center;
-    font-size: 2em;
     margin-bottom: 0em;
     margin-top: 1em;
 }
@@ -573,7 +587,7 @@ h2 {
 }
 
 .offer-block label {
-    margin:4vh 0;
+    margin:3.3vh 0;
     position:relative;
     display:inline-block;
   }

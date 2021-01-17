@@ -17,7 +17,6 @@ def show_main_page(request):
 
     news = News.objects.all()
     info['news'] = news
-    print(news[0].news_image.url)
 
     return render(request, 'index.html', info)
 

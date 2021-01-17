@@ -47,6 +47,9 @@ $(document).ready(function() {
     let form  = document.getElementById("registration_form");
     var csrftoken = form.elements.csrfmiddlewaretoken.value;
 
+    if ($(".gallery-cell").length == 0) {
+      $(".news-wrapper").css("display", "none")
+    }
     function csrfSafeMethod(method) {
         // these HTTP methods do not require CSRF protection
         return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
