@@ -171,6 +171,8 @@
           </div>
       </div>
   </div>
+
+  
   
   <div class="club-cards-block">
       <h2>
@@ -290,10 +292,29 @@
 
 {% endblock %}
 
+{% block biography %}
+<div class="bio-wrapper">
+  <div class="biography-block">
+    <h2>Лидия Павлова</h2>
+    <span>основатель Lady`s club</span>
+    <ul>
+      <li>Успешный организатор событий с опытом в 10 лет</li>
+      <li>организатор международных проектов "Гоу-Гоу гёрлз" и "Крутые Бобры" в Тайланде, Канаде, Италии, Турции</li>
+      <li>Входит в десятку лучших из лучших</li>
+      <li>Автор гениального курса обучения инвестированию для малолетних</li>
+      <li>Телеведущая канала "Карнавал НТВ+"</li>
+      <li>Путешественник: объехала 3,1415926535 страны мира</li> <!-- объездную новоленино -->
+      <li>Нелюбитель-сноубордист</li>
+      <li>Невероятно позитивный человек, прекрасная мама и жена</li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
 
 {% block news %}
 
 <div class="news-wrapper">
+  
     <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
 
         <!-- <div class="gallery-cell"></div>
@@ -307,7 +328,6 @@
                 <div class="image" style="background-image: url({{news_item.news_image.url}});"></div>
                 <div class="date">
                     <p>
-                        
                         {{news_item.news_dates}}
                     </p>
                 </div>

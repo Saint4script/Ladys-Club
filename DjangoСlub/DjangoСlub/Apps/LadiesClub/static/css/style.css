@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,cyrillic);
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 @font-face {
   font-family: 'Gilroy';
@@ -39,6 +40,9 @@ h2 {
   font-size: 1.7em;
   text-transform: uppercase;
   font-family: "Arsenal", "Gilroy", sans-serif;
+  font-family: 'Poiret One', cursive;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .fullscreen-bg {
@@ -53,40 +57,40 @@ h2 {
 
 @media(max-width: 1920px){
     *{
-        font-size: xx-large;
+        font-size: 22px;
     }
     .gallery-cell .description p{
-      padding: 2em;
+      padding: 2.5em;
     } 
 } 
 @media(max-width: 1600px){
     *{
-        font-size: x-large;
+        font-size: 20px;
+    }
+    .gallery-cell .description p{
+      padding: 1.8em;
+    } 
+} 
+@media(max-width: 1100px){
+    *{
+        font-size: 17px;
     }
     .gallery-cell .description p{
       padding: 1.5em;
     } 
 } 
-@media(max-width: 1100px){
-    *{
-        font-size: large;
-    }
-    .gallery-cell .description p{
-      padding: 1em;
-    } 
-} 
 
 @media(max-width: 1000px){
     *{
-        font-size: small;
+        font-size: 16px;
     }
     .gallery-cell .description p{
-      padding: 1em;
+      padding: 1.2em;
     } 
 } 
 @media(max-width: 600px){
     *{
-        font-size: x-small;
+        font-size: 14px;
     }
     .features-container {
         flex-direction: column;
@@ -119,7 +123,7 @@ h2 {
 }
 @media(max-width: 350px){
     *{
-        font-size: x-small;
+        font-size: 12px;
     }
     .features-container {
         flex-direction: column;
@@ -292,15 +296,15 @@ h2 {
 }
 .mission-text {
     color: #BA0B0B;
-    font-family: 'Roboto Condensed', cursive; /*'Poiret One', cursive*/ /*'Bellota Text', cursive*/
+    font-family: 'Poiret One', cursive; /*'Poiret One', cursive*/ /*'Bellota Text', cursive*/ /* 'Roboto Condensed', cursive*/ /* 'Comfortaa', cursive*/
     font-size: 1.7em;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
 }
 
 .advantages-block{
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: #ffffff;
     padding: 2em 0;
     margin-bottom: 12em;
 }
@@ -334,6 +338,9 @@ h2 {
     font-family: 'Poiret One', cursive;
     font-weight: 500;
 }
+
+
+
 /*TODO  Choose color to this block _____________+++++++++++++++++++++++++++++++++++++++++____________________________________*/
 .club-cards-block{
     background-color: #F2F2F2;
@@ -393,8 +400,8 @@ h2 {
 .club-card-item ul{
     list-style-type: none;
     padding: 0 0 0 1em  ;
-    font-family: 'Poiret One', cursive;
-    font-weight: 500;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
 }
 
 
@@ -407,8 +414,9 @@ h2 {
 .club-cards-block h5{
     text-align: center;
     margin: 0;
-    /* text-transform: uppercase; */
-    font-family: "Arsenal", "Gilroy", sans-serif;
+    padding: 1em 0 0 0;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
     font-weight: 600;
 }  
 
@@ -452,10 +460,68 @@ h2 {
     margin-top: 1em;
 }
 
+.bio-wrapper {
+  background-image: url("/static/res/pics/Lidia.jpg");
+  padding: 2em 0;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+  z-index: 1;
+}
+.biography-block {
+  padding: 2em 0 2em 2em;
+  background-color: #fff;
+  margin: 5em auto 5em 0;
+  width: 55vw;
+  opacity: 0.9;
+  z-index: 100;
+  position: relative;
+}
+.bio-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.1);
+  z-index: 2;
+}
+.biography-block span{
+  display: inline-block;
+  margin: 0 auto 1em auto;
+  font-family: 'Poiret One', cursive;
+  font-weight: 500;
+  font-style: italic;
+}
+.biography-block ul{
+  /* list-style-type: none; */
+  padding: 0 0 0 1em  ;
+  font-family: 'Poiret One', cursive;
+  font-weight: 300;
+  
+}
+.biography-block ul li{
+  font-size: 1em;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+.biography-block h2{
+  font-family:  "Roboto Condensed", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
 .news-wrapper{
-    background-color: #F2F2F2;
+    /* background-color: #F2F2F2; */
+    background-color: #ffffff;
     width:100vw;
-    padding: 1em 0;
+    padding: 10em 0;
+    margin: 0 0;
 }
 
 .flickity-page-dots{
@@ -468,7 +534,7 @@ h2 {
   
 .gallery-cell {
     display: grid;
-    grid-template-rows: 30vh 5vh 10vh 25vh;
+    grid-template-rows: 40vh 3vh 7vh 20vh;
     overflow-y:hidden;
     width: 32%;
     height: 75vh;
@@ -489,11 +555,11 @@ h2 {
 }
 
 .gallery-cell .image{
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -508,6 +574,7 @@ h2 {
 .gallery-cell .header p{
   text-align: center;
   text-transform: uppercase;
+  font-size: 1em;
 }
 
 .gallery-cell .description p{
@@ -605,9 +672,9 @@ h2 {
   }
   
   .offer-block input {
-    padding:10px;
+    padding:10px 10px 10px 14px;
     min-width: 50vw;
-    text-align: center;
+    text-align: left;
     border: 1px solid #acadad;
     border-radius: 10px;
     font-size: 1.3em;
