@@ -13,6 +13,10 @@
   font-style: normal;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body {
     padding:0;
     margin: 0;
@@ -33,6 +37,8 @@ body {
 *:after{
     box-sizing: border-box;
     font-size: 17px;
+    /* margin: 0;
+    padding: 0; */
 }
 
 h2 {
@@ -50,7 +56,7 @@ h2 {
     z-index: -100;
     position: relative;
     width: 100%;
-    padding-top: 50%;
+    padding-top: 35%;
     box-shadow: 0 20px 20px -20px #333;
     transform-style: inherit;
 }
@@ -166,11 +172,12 @@ h2 {
     background-size: contain;
     background-position: center;
     display: flex;
+    display: none;
 }
 
 .fullscreen-bg__video {
     position: absolute;
-    top: -400px;
+    top: -30vw;
     left: 0;
     width: 100%;
 }
@@ -340,8 +347,6 @@ h2 {
 }
 
 
-
-/*TODO  Choose color to this block _____________+++++++++++++++++++++++++++++++++++++++++____________________________________*/
 .club-cards-block{
     background-color: #F2F2F2;
     padding-top: 2em;
@@ -460,8 +465,7 @@ h2 {
     margin-top: 1em;
 }
 
-.bio-wrapper {
-  background-image: url("/static/res/pics/Lidia.jpg");
+.bio-wrapper-lidia, .bio-wrapper-tanya {
   padding: 2em 0;
   width: 100vw;
   background-repeat: no-repeat;
@@ -469,7 +473,14 @@ h2 {
   position: relative;
   z-index: 1;
 }
-.biography-block {
+.bio-wrapper-lidia {
+  background-image: url("/static/res/pics/Lidiya.png");
+}
+.bio-wrapper-tanya {
+  background-image: url("/static/res/pics/Tanya.png");
+}
+
+.bio-wrapper-lidia .biography-block {
   padding: 2em 0 2em 2em;
   background-color: #fff;
   margin: 5em auto 5em 0;
@@ -478,6 +489,17 @@ h2 {
   z-index: 100;
   position: relative;
 }
+
+.bio-wrapper-tanya .biography-block {
+  padding: 2em 2em 2em 0;
+  background-color: #fff;
+  margin: 5em 0 5em auto;
+  width: 55vw;
+  opacity: 0.9;
+  z-index: 100;
+  position: relative;
+}
+
 .bio-wrapper::after {
   content: '';
   position: absolute;
@@ -488,6 +510,9 @@ h2 {
   background: rgba(0,0,0,.1);
   z-index: 2;
 }
+.bio-wrapper-tanya .biography-block span{
+  margin: 0 auto 1em auto;
+}
 .biography-block span{
   display: inline-block;
   margin: 0 auto 1em auto;
@@ -496,11 +521,9 @@ h2 {
   font-style: italic;
 }
 .biography-block ul{
-  /* list-style-type: none; */
   padding: 0 0 0 1em  ;
   font-family: 'Poiret One', cursive;
   font-weight: 300;
-  
 }
 .biography-block ul li{
   font-size: 1em;
@@ -514,6 +537,10 @@ h2 {
   font-weight: 400;
   font-size: 1.4em;
   margin-bottom: 0;
+}
+
+.bio-wrapper-tanya .biography-block h2{
+  text-align: right;
 }
 
 .news-wrapper{
