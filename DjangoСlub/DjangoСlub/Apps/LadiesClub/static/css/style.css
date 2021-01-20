@@ -37,13 +37,11 @@ body {
 *:after{
     box-sizing: border-box;
     font-size: 17px;
-    /* margin: 0;
-    padding: 0; */
 }
 
 h2 {
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-family: "Arsenal", "Gilroy", sans-serif;
   font-family: 'Poiret One', cursive;
@@ -59,106 +57,6 @@ h2 {
     padding-top: 35%;
     box-shadow: 0 20px 20px -20px #333;
     transform-style: inherit;
-}
-
-@media(max-width: 1920px){
-    *{
-        font-size: 22px;
-    }
-    .gallery-cell .description p{
-      padding: 2.5em;
-    } 
-} 
-@media(max-width: 1600px){
-    *{
-        font-size: 20px;
-    }
-    .gallery-cell .description p{
-      padding: 1.8em;
-    } 
-} 
-@media(max-width: 1100px){
-    *{
-        font-size: 17px;
-    }
-    .gallery-cell .description p{
-      padding: 1.5em;
-    } 
-} 
-
-@media(max-width: 1000px){
-    *{
-        font-size: 16px;
-    }
-    .gallery-cell .description p{
-      padding: 1.2em;
-    } 
-} 
-@media(max-width: 600px){
-    *{
-        font-size: 14px;
-    }
-    .features-container {
-        flex-direction: column;
-    }
-    .advantages-items{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr)!important;
-        grid-auto-columns: 50%;
-        grid-column-gap: 1em;
-    }
-    .gallery-cell {
-      display: grid;
-      grid-template-rows: 30vh 5vh 7vh 28vh;
-      width: 45%;
-    }
-    .gallery-cell .date p{
-      font-size: .8em;
-    }
-    
-    .gallery-cell .header p{
-      font-size: 0.9em;
-    }
-    
-    .gallery-cell .description p{
-      text-align:start;
-      font-size: .7em;
-      padding: 0;
-    } 
-
-}
-@media(max-width: 350px){
-    *{
-        font-size: 12px;
-    }
-    .features-container {
-        flex-direction: column;
-    }
-    .advantages-items{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)!important;
-        grid-auto-columns: 50%;
-        grid-column-gap: 1em;
-    }
-    .club-cards-block h5{
-        margin-bottom: -3em!important;
-    }
-    .gallery-cell {
-      display: grid;
-      grid-template-rows: 22vh 3vh 22vh 23vh;
-      width: 45%;
-    }
-    .gallery-cell .date p{
-      font-size: .8em;
-    }
-    .gallery-cell .header p{
-      font-size: 0.7em;
-    }
-    .gallery-cell .description p{
-      text-align:start;
-      font-size: .7em;
-      padding: 0;
-    } 
 }
 
 .fullscreen-bg .logo-wrapper{
@@ -211,7 +109,7 @@ h2 {
 }
 
 .about-club p {
-	text-align: center;
+  text-align: center;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -244,7 +142,7 @@ h2 {
 }
 .features-container .feature-block p {
     text-align:left;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 .features-container .feature-block h3 {
     text-align:center;
@@ -340,10 +238,10 @@ h2 {
     margin: 0 auto;
 }
 .advantages-items div p{
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
     font-family: 'Poiret One', cursive;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 
@@ -491,7 +389,7 @@ h2 {
 }
 
 .bio-wrapper-tanya .biography-block {
-  padding: 2em 2em 2em 0;
+  padding: 2em 0 2em 2em;
   background-color: #fff;
   margin: 5em 0 5em auto;
   width: 55vw;
@@ -540,7 +438,7 @@ h2 {
 }
 
 .bio-wrapper-tanya .biography-block h2{
-  text-align: right;
+  text-align: left;
 }
 
 .news-wrapper{
@@ -828,3 +726,178 @@ h2 {
 	    font-size: 40px;
 	}
 } */
+
+
+@media(max-width: 1920px){
+    *{
+        font-size: 22px;
+    }
+    .gallery-cell .description p{
+      padding: 2.5em;
+    } 
+} 
+@media(max-width: 1600px){
+    *{
+        font-size: 20px;
+    }
+    .gallery-cell .description p{
+      padding: 1.8em;
+    } 
+} 
+@media(max-width: 1100px){
+    *{
+        font-size: 17px;
+    }
+    .gallery-cell .description p{
+      padding: 1.5em;
+    } 
+} 
+
+@media(max-width: 1000px){
+    *{
+        font-size: 16px;
+    }
+    .gallery-cell .description p{
+      padding: 1.2em;
+    } 
+} 
+
+@media(max-width: 600px){
+    *{
+        font-size: 14px;
+    }
+    .mission-container{
+        margin-top: 10em;
+    }
+    .features-container {
+        flex-direction: column;
+    }
+    .advantages-block{
+        margin-bottom: 10em;
+    }
+    .advantages-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)!important;
+        grid-auto-columns: 50%;
+        grid-column-gap: 1em;
+    }
+
+    .club-cards-types{
+        display:block;
+    }
+
+    .club-card-item{
+        display:block;
+        width:fit-content;
+        margin:0 auto 1em auto;
+    }
+    .club-card-item ul{
+        padding-right: 1em;
+    }
+    .bio-wrapper-lidia{
+        background-image: url('/static/res/pics/LidiyaButLeft.png');
+    }
+    .biography-block{
+        width:100%!important;
+    }
+
+    .gallery-cell {
+      display: grid;
+      grid-template-rows: 30vh 5vh 7vh 28vh;
+      width: 45%;
+    }
+    .gallery-cell .date p{
+      font-size: .8em;
+    }
+    
+    .gallery-cell .header p{
+      font-size: 0.9em;
+    }
+    
+    .gallery-cell .description p{
+      text-align:start;
+      font-size: .7em;
+      padding: 0;
+    } 
+
+}
+@media(max-width: 350px){
+    *,
+    *:before,
+    *:after{
+        font-size: 12px;
+    }
+    p{
+        font-size: 1em!important;
+    }
+
+    .about-club h2{
+        font-size: 1.5em;
+    }
+
+    .second-feature{
+        border: none;
+    }
+    .mission-header h2{
+        font-size: 1.5em;
+        padding: 13px;
+    }
+    .mission-text {
+        margin: 0;
+    }
+
+    .mission{
+        padding-bottom: 1em;
+    }
+
+    .mission hr{
+        height: 30px;
+    }
+
+    .features-container {
+        flex-direction: column;
+    }
+    .advantages-items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)!important;
+        grid-auto-columns: 50%;
+        grid-column-gap: 1em;
+    }
+    .club-cards-block h5{
+        margin-bottom: -3em!important;
+    }
+    .club-cards-description h2{
+        font-size: 1.5em;
+    }
+    .gallery-cell {
+      display: grid;
+      grid-template-rows: 22vh 3vh 22vh 23vh;
+      width: 45%;
+    }
+    .gallery-cell .date p{
+      font-size: .8em;
+    }
+    .gallery-cell .header p{
+      font-size: 0.7em;
+    }
+    .gallery-cell .description p{
+      text-align:start;
+      font-size: .7em;
+      padding: 0;
+    } 
+}
+
+@media(max-width: 240px){
+    .mission-header h2{
+        font-size: 1.1em;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .mission-text{
+        margin-top: 2em;
+    }
+
+    .mission-container{
+        margin-top: 8em;
+    } 
+}
