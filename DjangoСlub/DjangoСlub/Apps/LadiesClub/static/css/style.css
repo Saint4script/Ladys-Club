@@ -539,34 +539,35 @@ h2 {
     margin-top: 0.7em;
 }
 #one{
-    background: url("/static/res/pics/icons/1.png") no-repeat;
+    background: url("/static/res/pics/icons/1.svg") no-repeat;
     background-size: 1.85em;
     background-position: left center;
 }
 #two{
-    background: url("/static/res/pics/icons/2.png") no-repeat;
+    background: url("/static/res/pics/icons/2.svg") no-repeat;
     background-size: 1.85em;
     background-position: left center;
 }
 #three{
-    background: url("/static/res/pics/icons/3.png") no-repeat;
+    background: url("/static/res/pics/icons/3.svg") no-repeat;
     background-size: 1.85em;
     background-position: left center;
 }
 #four{
-    background: url("/static/res/pics/icons/4.png") no-repeat;
+    background: url("/static/res/pics/icons/4.svg") no-repeat;
     background-size: 1.85em;
     background-position: left center;
 }
 #five{
-    background: url("/static/res/pics/icons/5.png") no-repeat;
+    background: url("/static/res/pics/icons/5.svg") no-repeat;
     background-size: 1.85em;
     background-position: left center;
 }
 #another{
-    background: url("/static/res/pics/icons/silence_1.png") no-repeat;
+    background: url("/static/res/pics/icons/silence_1.svg") no-repeat;
     background-size: 1.85em;
     background-position: left center;
+    /* height:fit-content; */
 }
 .offer-block fieldset{
     min-width: 60vw;
@@ -900,4 +901,9 @@ h2 {
     .mission-container{
         margin-top: 8em;
     } 
+}
+
+.icon use{
+    height:50px;
+    width:50px;
 }

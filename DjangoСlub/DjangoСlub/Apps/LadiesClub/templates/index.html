@@ -291,7 +291,7 @@
 
 {% endblock %}
 
-<!-- {% block biographyLidia %}
+{% block biographyLidia %}
 <div class="bio-wrapper-lidia">
   <div class="biography-block">
     <h2>Лидия Павлова</h2>
@@ -327,20 +327,13 @@
     </ul>
   </div>
 </div>
-{% endblock %} -->
+{% endblock %}
 
 {% block news %}
 
 <div class="news-wrapper">
   
-    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-
-        <!-- <div class="gallery-cell"></div>
-        <div class="gallery-cell"></div>
-        <div class="gallery-cell"></div>
-        <div class="gallery-cell"></div>
-        <div class="gallery-cell"></div> -->
-        
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>        
         {% for news_item in news %}
             <div class="gallery-cell">
                 <div class="image" style="background-image: url({{news_item.news_image.url}});"></div>
