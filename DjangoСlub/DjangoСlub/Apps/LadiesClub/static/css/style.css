@@ -17,7 +17,8 @@
 
 html{
   overflow-x: hidden;
-  --main-color: #BBE6DF;
+  --main-color: #e4fffb;
+  --mission-color: #4b0047;
 }
 
 body {
@@ -141,7 +142,8 @@ h2 {
   font-size: 0.8em;
 }
 .fourth-feature ul{
-    list-style-type: none;
+    list-style-type:disc;
+    margin-left: 2em;
 }
 .fourth-feature ul li{
     font-family: 'Roboto Condensed', sans-serif;
@@ -175,6 +177,7 @@ h2 {
 
 .mission-container {
     background-color: #fff;
+    background-color: var(--main-color);
     margin-top: 12em;
     padding: auto 5em;
     border-top: #fff 1px solid;
@@ -221,7 +224,7 @@ h2 {
     text-align: center;
 }
 .mission-text {
-    color: #7c0000;
+    color: var(--mission-color);
     font-family: 'Poiret One', cursive; /*'Poiret One', cursive*/ /*'Bellota Text', cursive*/ /* 'Roboto Condensed', cursive*/ /* 'Comfortaa', cursive*/
     font-size: 1.2em;
     font-weight: 600;
@@ -229,7 +232,7 @@ h2 {
 }
 
 .events {
-    color: #7c0000;
+    color: var(--mission-color);;
     font-family: 'Poiret One', cursive; /*'Poiret One', cursive*/ /*'Bellota Text', cursive*/ /* 'Roboto Condensed', cursive*/ /* 'Comfortaa', cursive*/
     font-size: 1.2em;
     font-weight: 300;
@@ -239,14 +242,14 @@ h2 {
     list-style-type: none;
 }
 .events-block ul li{
-    color: #7c0000;
+    color: var(--mission-color);;
     font-family: 'Poiret One', cursive; /*'Poiret One', cursive*/ /*'Bellota Text', cursive*/ /* 'Roboto Condensed', cursive*/ /* 'Comfortaa', cursive*/
     font-size: 1.2em;
     font-weight: 300;
     text-align: center;
 }
 .after-mission-text {
-    color: #7c0000;
+    color: var(--mission-color);;
     font-family: 'Poiret One', cursive; /*'Poiret One', cursive*/ /*'Bellota Text', cursive*/ /* 'Roboto Condensed', cursive*/ /* 'Comfortaa', cursive*/
     font-size: 1em;
     font-weight: 300;
