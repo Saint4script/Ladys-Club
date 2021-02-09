@@ -20,6 +20,7 @@ html{
   overflow-x: hidden;
   --main-color: #e4fffb;
   --mission-color: #4b0047;
+  font-size: 20px;
 }
 
 body {
@@ -41,17 +42,23 @@ body {
 *:before,
 *:after{
     box-sizing: border-box;
-    font-size: 17px;
 }
 
 h2 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-transform: uppercase;
   font-family: "Arsenal", "Gilroy", sans-serif;
   font-family: 'Poiret One', cursive;
   font-weight: 800;
   letter-spacing: 1px;
+}
+h3 {
+    text-align:center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: "Arsenal", "Gilroy", sans-serif;
+    font-weight: 500;
 }
 
 .fullscreen-bg {
@@ -115,16 +122,21 @@ h2 {
     margin-right: auto;
 }
 .about-club h2{
-    margin-top: 3em;
+    margin: 2em 0;
+    height: 3em;
+}
+.about-club h2:first-child{
+    margin: 1em 0 0 0;
     height: 3em;
 }
 .about-club p {
   text-align: center;
-  font-size: 20px;
+  font-size: 1em;
   font-weight: 200;
   letter-spacing: 1px;
   padding-left: 8%;
   padding-right: 8%;
+  margin: 0 auto;
 }
 .about-club-logo-wrapper{
     padding: auto;
@@ -145,7 +157,7 @@ h2 {
     padding-bottom: 0;
 }
 .about-club hr {
-    margin: 3em auto 2em;
+    margin: 2em auto 2em auto;
 	padding: 0;
     height: 50px;
 	border: none;
@@ -166,7 +178,7 @@ h2 {
 }
 .feature-block{
   width: 50%;
-  font-size: 0.8em;
+  /* font-size: 0.8em; */
   background-color: #fff;
   padding-top: 5em;
   overflow: hidden;
@@ -177,7 +189,7 @@ h2 {
 }
 .fourth-feature ul li{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
     font-weight: 200;
 }
 .first-feature {
@@ -185,14 +197,15 @@ h2 {
     box-shadow: inset 0 10px 10px 0 #fff,
                 inset 0 -10px 10px -10px var(--feature-border-shadow-color),
                 inset -10px 0 10px -10px var(--feature-border-shadow-color);
-    
+    padding-bottom: 1em;
 }
 .second-feature {
     border-left: 0.5px solid rgb(65, 65, 65); 
     border-bottom: 0.5px solid rgb(65, 65, 65); 
     box-shadow: inset 0 10px 10px 0 #fff,
                 inset 0 -10px 10px -10px var(--feature-border-shadow-color),
-                inset 10px 0 10px -10px var(--feature-border-shadow-color)
+                inset 10px 0 10px -10px var(--feature-border-shadow-color);
+    padding-bottom: 1em;         
 }
 .third-feature {
     box-shadow: inset 0px -10px 10px 0 #fff,
@@ -208,15 +221,15 @@ h2 {
 }
 .features-container .feature-block p {
     text-align:left;
-    font-size: 1em;
+    /* font-size: 1em; */
     text-align: center;
 }
 .features-container .feature-block h3 {
-    text-align:center;
+    /* text-align:center;
     font-size: 1.2em;
     text-transform: uppercase;
     font-family: "Arsenal", "Gilroy", sans-serif;
-    font-weight: 500;
+    font-weight: 500; */
 }
 
 .mission-container {
@@ -255,10 +268,10 @@ h2 {
     display: inline-block;
     padding: 10px;
     background-color: black;
-    text-align: center;
+    /* text-align: center; */
     color: #fff;
-    font-size: 2em;
-    text-transform: uppercase;
+    /* font-size: 2em;
+    text-transform: uppercase; */
     letter-spacing: 2px;
 }
 
@@ -270,15 +283,15 @@ h2 {
 .mission-text {
     color: var(--mission-color);
     font-family: 'Poiret One', cursive; /*'Poiret One', cursive*/ /*'Bellota Text', cursive*/ /* 'Roboto Condensed', cursive*/ /* 'Comfortaa', cursive*/
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     font-weight: 600;
     text-align: center;
 }
 
 .events {
-    color: var(--mission-color);;
+    color: var(--mission-color);
     font-family: 'Poiret One', cursive; /*'Poiret One', cursive*/ /*'Bellota Text', cursive*/ /* 'Roboto Condensed', cursive*/ /* 'Comfortaa', cursive*/
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     font-weight: 300;
     text-align: center;
 }
@@ -286,16 +299,16 @@ h2 {
     list-style-type: none;
 }
 .events-block ul li{
-    color: var(--mission-color);;
+    color: var(--mission-color);
     font-family: 'Poiret One', cursive; /*'Poiret One', cursive*/ /*'Bellota Text', cursive*/ /* 'Roboto Condensed', cursive*/ /* 'Comfortaa', cursive*/
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     font-weight: 300;
     text-align: center;
 }
 .after-mission-text {
-    color: var(--mission-color);;
+    color: var(--mission-color);
     font-family: 'Poiret One', cursive; /*'Poiret One', cursive*/ /*'Bellota Text', cursive*/ /* 'Roboto Condensed', cursive*/ /* 'Comfortaa', cursive*/
-    font-size: 1em;
+    /* font-size: 1em; */
     font-weight: 300;
     text-align: center;
 }
@@ -374,7 +387,7 @@ h2 {
 }
 .advantages-items div p{
     width:100%;
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
     text-align: center;
     font-family: 'Poiret One', cursive;
     font-weight: 800;
@@ -440,7 +453,7 @@ h2 {
 
 .club-card-item ul{
     list-style-type: none;
-    padding: 0 0 0 1em  ;
+    padding: 0 0 0 1em;
     font-family: 'Comfortaa', cursive;
     font-weight: 300;
 }
@@ -468,15 +481,12 @@ h2 {
 	border: none;
 	border-bottom: 1px solid #1f1209;
 	box-shadow: 0 20px 20px -20px #333;
-    
 }
-
 
 .club-cards-description-wrapper{
     width: 100%;
     background-color: #fff;
     padding-bottom: 2em;
-    /* margin-top: 12em; */
     padding-top: 2em;
 }
 .club-cards-description{
@@ -492,11 +502,15 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    line-height: 1.5em;
+    font-family: 'Poiret One', cursive;
+    font-weight: 500;
+    font-size: 1.2em;
 }
 .club-cards-description h2 {
     margin:0;
     text-align: center;
-    font-size: 2em;
+    /* font-size: 2em; */
     margin-bottom: 0em;
     margin-top: 1em;
 }
@@ -519,7 +533,7 @@ h2 {
 }
 
 .bio-wrapper-lidia .biography-block {
-  padding: 2em 0 2em 2em;
+  padding: 2em 1em 2em 1em;
   background-color: #fff;
   margin: 5em auto 5em 0;
   width: 55vw;
@@ -530,7 +544,7 @@ h2 {
 }
 
 .bio-wrapper-tanya .biography-block {
-  padding: 2em 0 2em 2em;
+  padding: 2em 1em 2em 1em;
   background-color: #fff;
   margin: 5em 0 5em auto;
   width: 55vw;
@@ -565,7 +579,7 @@ h2 {
   font-weight: 300;
 }
 .biography-block ul li{
-  font-size: 1em;
+  /* font-size: 1em; */
   text-transform: lowercase;
   letter-spacing: 1px;
 }
@@ -574,7 +588,7 @@ h2 {
   font-family:  "Roboto Condensed", sans-serif;
   text-align: left;
   font-weight: 400;
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
   margin-bottom: 0;
 }
 
@@ -638,7 +652,7 @@ h2 {
  
 .gallery-cell .date p{
   text-align: center;
-  font-size: .6em;
+  /* font-size: .6em; */
   font-style: italic;
   font-weight: 200;
 }
@@ -646,12 +660,12 @@ h2 {
 .gallery-cell .header p{
   text-align: center;
   text-transform: uppercase;
-  font-size: 1em;
+  /* font-size: 1em; */
 }
 
 .gallery-cell .description p{
   text-align:center;
-  font-size: .8em;
+  /* font-size: .8em; */
 } 
 
 
@@ -680,15 +694,20 @@ h2 {
 }
 .offer-block ul li {
     font-weight: 500;
-    font-size: 1.1em;
+    /* font-size: 1.1em; */
     padding: 5px;
     padding-left: 2.7em;
     margin-top: 0.7em;
 }
 #one{
-    background: url("/static/res/pics/icons/1.svg") no-repeat;
-    background-size: 1.85em;
-    background-position: left center;
+    /* background: url("/static/res/pics/icons/1.svg") no-repeat; */
+    /* background-size: 1.85em; */
+    /* background-position: left center; */
+    font-family: 'Poiret One', cursive;
+    font-size: 0.9em;
+    font-weight: 700;
+    align-self: flex-start;
+    margin-left: 25%;
 }
 #two{
     background: url("/static/res/pics/icons/2.svg") no-repeat;
@@ -730,9 +749,9 @@ h2 {
     margin:3.3vh 0;
     position:relative;
     display:inline-block;
-  }
-    
-  .offer-block span {
+}
+
+.offer-block span {
     padding:10px;
     pointer-events: none;
     position:absolute;
@@ -742,23 +761,23 @@ h2 {
     transition-timing-function: ease;
     transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity:0.5;
-  }
-  
-  .offer-block input {
+}
+
+.offer-block input {
     padding:10px 10px 10px 14px;
     min-width: 50vw;
     text-align: left;
     border: 1px solid #acadad;
     border-radius: 10px;
-    font-size: 1.3em;
-  }
-  
-  .offer-block input:focus + span, .offer-block  input:not(:placeholder-shown) + span {
+    /* font-size: 1.3em; */
+}
+
+.offer-block input:focus + span, .offer-block  input:not(:placeholder-shown) + span {
     opacity:1;
     transform: scale(1) translateY(-7vh) translateX(-1vw);
     font-family: 'Poiret One', cursive;
-  }
-  .offer-block input[type="button"]{
+}
+.offer-block input[type="button"]{
     color: #fff;
     border: 1px #fff solid;
     min-width: 8em;
@@ -773,27 +792,27 @@ h2 {
     margin-bottom: 2em;
     -webkit-animation: pulsate 1.2s linear infinite;
     animation: pulsate 1.2s linear infinite;
-  }
+}
 
-  .offer-block input[type="button"]:hover {
+.offer-block input[type="button"]:hover {
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
     cursor: pointer;
-  }
-  .offer-block input[type="button"]:active {
+}
+.offer-block input[type="button"]:active {
     top: 1px;
     color: #fff;
     text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
     box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
-  }
-  @-webkit-keyframes pulsate {
-    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
-  }
-  @keyframes pulsate {
-    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
-  }
+}
+@-webkit-keyframes pulsate {
+50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+@keyframes pulsate {
+50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
 
-  .gif-container{
+.gif-container{
     width: 400px;
     height: 400px;
     background-image: url("/static/res/pics/trans-letter.gif");
@@ -806,8 +825,8 @@ h2 {
     pointer-events: none;
     z-index: 40;
     margin: 22vh auto;
-  }
-  .gif-shadow{
+}
+.gif-shadow{
     display: none;
     position: fixed;
     top: 0;
@@ -821,7 +840,7 @@ h2 {
     opacity: 1;
     pointer-events: none;
     background-color: rgba(51,51,51,.75);
-  }
+}
 
 .footer{
     width: 100%;
@@ -988,6 +1007,17 @@ h2 {
     .mobile-only{
         display: inline-block;
     }
+
+    .about-club {
+        width: 100%;
+    }
+
+    .feature-block {
+        width: 100%;
+    }
+    .club-cards-description  p{
+        padding: 0;
+    }
 }
 @media(max-width: 350px){
     *,
@@ -1007,8 +1037,8 @@ h2 {
         border: none;
     }
     .mission-header h2{
-        font-size: 1.5em;
-        padding: 13px;
+        font-size: 1.2em;
+        padding: 19px;
     }
     .mission-text {
         margin: 0;
@@ -1024,6 +1054,9 @@ h2 {
 
     .features-container {
         flex-direction: column;
+    }
+    .advantages-item{
+        width: 90%;
     }
 
     .club-cards-block h5{
