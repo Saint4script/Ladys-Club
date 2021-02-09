@@ -109,6 +109,8 @@ h2 {
 
 .about-club {
     width: 90%;
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
 }
@@ -405,7 +407,7 @@ h2 {
     justify-content:space-between;
     border: 1px solid #acadad;
     background-color: #d5fff88c;
-    border-radius: 8%;
+    border-radius: 2%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding: 1em 0;
     /* background-color: #ffffff; */
@@ -598,12 +600,18 @@ h2 {
   
 .gallery-cell {
     display: grid;
-    grid-template-rows: 40vh 3vh 7vh 20vh;
+    grid-template-rows: 35vh 3vh 12vh 20vh;
     overflow-y:hidden;
     width: 32%;
-    height: 75vh;
+    height: 90vh;
     margin-right: 20px;
     counter-increment: gallery-cell;
+    padding: 0.5em 0;
+}
+
+.gallery-cell.is-selected {
+    background-color: #fdfbff;
+    border-radius: 2%;
 }
 
 /* cell number */
@@ -642,7 +650,7 @@ h2 {
 }
 
 .gallery-cell .description p{
-  text-align:start;
+  text-align:center;
   font-size: .8em;
 } 
 
@@ -921,7 +929,6 @@ h2 {
     }
 
     .club-card-item{
-        display:block;
         width: 60%;
         margin:0 auto 1em auto;
     }
@@ -1020,14 +1027,17 @@ h2 {
     }
 
     .club-cards-block h5{
-        margin-bottom: -3em!important;
+        margin-bottom: -3em;
+    }
+    .club-card-item {
+        width: 80%;
     }
     .club-cards-description h2{
         font-size: 1.5em;
     }
     .gallery-cell {
       display: grid;
-      grid-template-rows: 22vh 3vh 22vh 23vh;
+      grid-template-rows: 45vh 5vh 20vh ;
       width: 45%;
     }
     .gallery-cell .date p{
@@ -1035,12 +1045,11 @@ h2 {
     }
     .gallery-cell .header p{
       font-size: 0.7em;
+      word-wrap: break-word;
     }
-    .gallery-cell .description p{
-      text-align:start;
-      font-size: .7em;
-      padding: 0;
-    } 
+    .gallery-cell .description {
+        display: none;
+    }
 }
 
 @media(max-width: 240px){
