@@ -15,6 +15,7 @@
 
 
 
+
 html{
   overflow-x: hidden;
   --main-color: #e4fffb;
@@ -299,10 +300,11 @@ h2 {
 
 .advantages-block{
     width: 100%;
-    height:fit-content;
+    height: fit-content;
     background-color: #ffffff;
     padding: 2em 0;
     margin-bottom: 12em;
+    /* overflow-x: scroll; */
 }
 
 .advantages-block h2{
@@ -317,43 +319,38 @@ h2 {
     /* height: fit-content; */
     margin: 0 auto;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-rows: 5%;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-columns: 33%;
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 1em;
     /* justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;  minmax(30%, 1fr)*/
 }
 
 .advantages-item{
-    
-    padding: 1em;
-    line-height: 1.3em;
+    padding: 0em;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
 }
 /* Шаблон для атрибута grid-area: row-start / column-start / row-end / column-end; */
 .advantages-item.first{
-    grid-area: 1 / 1 / 2 / 1;
-    display: flex;
+    grid-area: 1 / 1 / 2 / 2;
     align-items: flex-start;
 }
 
 .advantages-item.second{
     grid-area: 1 / 3 / 2 / 3;
-    display: flex;
     align-items: flex-start;
 }
 
 .advantages-item.third{
     grid-area: 2 / 1 / 2 / 2;
-    display: flex;
     align-items: flex-end;
 }
 
 .advantages-item.fourth{
     grid-area: 2 / 3 / 2 / 3;
-    display: flex;
     align-items: flex-end;
 }
 
@@ -363,6 +360,8 @@ h2 {
 
 .advantages-item.sixth{
     grid-area: 1 / 2 / 3 / 2;
+    align-items: center;
+    justify-content: center;
 }
 
 .advantages-items div img{
@@ -403,11 +402,12 @@ h2 {
     width: 30%;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
     border: 1px solid #acadad;
     background-color: #d5fff88c;
     border-radius: 8%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 1em 0;
     /* background-color: #ffffff; */
 }
 
@@ -815,11 +815,6 @@ h2 {
     background-color: rgba(51,51,51,.75);
   }
 
-  
-
-
-
-
 .footer{
     width: 100%;
     height:25vh;
@@ -911,15 +906,14 @@ h2 {
     }
     .features-container {
         flex-direction: column;
+        align-items: center;
+    }
+    .feature-block{
+        width: 80%;
+        border: none;
     }
     .advantages-block{
         margin-bottom: 10em;
-    }
-    .advantages-items{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr)!important;
-        grid-auto-columns: 50%;
-        grid-column-gap: 1em;
     }
 
     .club-cards-types{
@@ -928,7 +922,7 @@ h2 {
 
     .club-card-item{
         display:block;
-        width:fit-content;
+        width: 60%;
         margin:0 auto 1em auto;
     }
     .club-card-item ul{
@@ -960,6 +954,33 @@ h2 {
       padding: 0;
     } 
 
+}
+
+@media(min-width: 500px){
+    .mobile-only{
+        display: none;
+    }
+}
+@media(max-width: 500px){
+    .advantages-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .advantages-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between!important;
+        align-items: center!important;
+    }
+    .advantages-item.sixth {
+        display: none;
+    }
+
+    .mobile-only{
+        display: inline-block;
+    }
 }
 @media(max-width: 350px){
     *,
@@ -997,12 +1018,7 @@ h2 {
     .features-container {
         flex-direction: column;
     }
-    .advantages-items{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)!important;
-        grid-auto-columns: 50%;
-        grid-column-gap: 1em;
-    }
+
     .club-cards-block h5{
         margin-bottom: -3em!important;
     }
