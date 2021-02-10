@@ -1,9 +1,9 @@
 {% extends "wrapper.html" %} {% load static %} {% block extrahead %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link type='text/css' rel='stylesheet' href={% static "/css/style.css" %}>
-<script src={% static "/js/index.js" %}></script>
 <link type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css'>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script>
+<script src={% static "/js/index.js" %}></script>
 {% endblock %} {% block title %} LADY`s CLUB {% endblock %} {% block fullscreen-bg %}
 <div class="fullscreen-bg">
 
@@ -484,7 +484,10 @@
     <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
         {% for news_item in news %}
         <div class="gallery-cell">
-            <div class="image" style="background-image: url({{news_item.news_image.url}});"></div>
+            <div class="image">
+                <!-- style="background-image: url({{news_item.news_image.url}});" -->
+                <img src="{{news_item.news_image.url}}">
+            </div>
             <div class="date">
                 <p>
                     {{news_item.news_dates}}
