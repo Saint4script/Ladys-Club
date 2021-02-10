@@ -1133,8 +1133,12 @@ h3 {
     .advantages-item {
         width: 90%;
     }
+    .club-cards-block {
+        /* display: flex;
+        flex-direction: column; */
+    }
     .club-cards-block h5 {
-        margin-bottom: -3em;
+        margin-bottom: 0em;
     }
     .club-card-item {
         width: 80%;
