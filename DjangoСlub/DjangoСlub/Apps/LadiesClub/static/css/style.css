@@ -979,6 +979,13 @@ h3 {
     * {
         font-size: 22px;
     }
+    .gallery {
+        height: 72vh;
+    }
+    .gallery-cell {
+        height: 70vh;
+        grid-template-rows: 35vh 5vh 7vh 20vh;
+    }
     .gallery-cell .description p {
         padding: 2.5em;
     }
@@ -993,9 +1000,25 @@ h3 {
     }
 }
 
+@media(max-width: 1480px) {
+    .gallery {
+        height: 82vh;
+    }
+    .flickity-viewport {
+        height: 80vh!important;
+    }
+    .gallery-cell {
+        height: 80vh;
+        grid-template-rows: 35vh 5vh 7vh 30vh;
+    }
+}
+
 @media(max-width: 1100px) {
     * {
         font-size: 17px;
+    }
+    .gallery button {
+        display: none;
     }
     .gallery-cell .description p {
         padding: 1.5em;
@@ -1045,9 +1068,15 @@ h3 {
     .biography-block {
         width: 100%!important;
     }
+    .gallery {
+        height: 57vh;
+    }
+    .flickity-viewport {
+        height: 55vh!important;
+    }
     .gallery-cell {
         display: grid;
-        grid-template-rows: 30vh 5vh 7vh 28vh;
+        grid-template-rows: 30vh 5vh 5vh 15vh;
         width: 45%;
     }
     .gallery-cell .date p {
@@ -1099,7 +1128,7 @@ h3 {
     }
 }
 
-@media(max-width: 350px) {
+@media(max-width: 375px) {
     *,
     *:before,
     *:after {
@@ -1142,6 +1171,12 @@ h3 {
     .club-cards-description h2 {
         font-size: 1.5em;
     }
+    .gallery {
+        height: 65vh;
+    }
+    .flickity-viewport {
+        height: 63vh!important;
+    }
     .gallery-cell {
         display: grid;
         grid-template-rows: 45vh 5vh 20vh;
@@ -1170,6 +1205,46 @@ h3 {
     }
     .mission-container {
         margin-top: 8em;
+    }
+    .gallery {
+        height: 70vh;
+    }
+    .flickity-viewport {
+        height: 65vh!important;
+    }
+    .gallery-cell {
+        grid-template-rows: 30vh 5vh 5vh 15vh;
+        width: 45%;
+    }
+    .flickity-page-dots .dot {
+        width: 7px!important;
+        height: 7px!important;
+    }
+}
+
+@media(min-height: 1080px) {
+    .gallery {
+        height: 72vh;
+    }
+    .flickity-viewport {
+        height: 70vh!important;
+    }
+    .gallery-cell {
+        height: 70vh;
+        grid-template-rows: 35vh 5vh 7vh 20vh;
+    }
+}
+
+@media(min-height: 1300px) {
+    .gallery {
+        height: 67vh;
+    }
+    .flickity-viewport {
+        height: 65vh!important;
+    }
+    .gallery-cell {
+        height: 70vh;
+        grid-template-rows: 35vh 5vh 5vh 17vh;
     }
 }
 
