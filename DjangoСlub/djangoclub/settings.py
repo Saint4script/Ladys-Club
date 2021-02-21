@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=jn@6$9$)rsmkg66c%yu66j!p9de*3%(hy1w61%mimjcb8n_uc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', '172.104.54.249']
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', '172.104.54.249', 'ladyclub.space']
 
 
 # Application definition
