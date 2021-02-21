@@ -7,8 +7,8 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.template.context_processors import csrf
 
-from LadiesClub.message import get_message
-from LadiesClub.models import News
+from ladiesclub.message import get_message
+from ladiesclub.models import News
 
 
 def show_main_page(request):

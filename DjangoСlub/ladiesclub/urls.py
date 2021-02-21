@@ -1,5 +1,5 @@
 from django.urls import path
-from LadiesClub.views import show_main_page, send_form
+from ladiesclub.views import show_main_page, send_form
 
 urlpatterns = [
     path('', show_main_page, name = "main"),
