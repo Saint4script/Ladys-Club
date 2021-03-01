@@ -61,6 +61,7 @@ def send_message(fio, num, user_email, questions):
 
 
 def send_form(request):
+    print("first-------------------------------------------------------------------------------------")
     data = request.POST
     fio = data.get('fio')
     num = data.get('phone_number')
@@ -70,12 +71,14 @@ def send_form(request):
     checker = send_message(fio, num, email, questions)
 
     if checker:
+        print("checker == true -------------------------------------------------------------------------------------")
         return JsonResponse(
             {
                 "status": "Ok"
             }
         )
     else:
+        print("checker == false -------------------------------------------------------------------------------------")
         return JsonResponse(
             {
                 'status': 'Fail'
