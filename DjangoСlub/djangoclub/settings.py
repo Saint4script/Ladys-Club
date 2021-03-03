@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=jn@6$9$)rsmkg66c%yu66j!p9de*3%(hy1w61%mimjcb8n_uc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', '172.104.54.249', 'ladyclub.space']
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', '172.104.54.249', 'ladyclub.space', 'www.ladyclub.space']
 
 
 # Application definition
@@ -123,3 +123,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+# Email
+
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_HOST_PASSWORD = 'bpbgfhjkm'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
