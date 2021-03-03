@@ -927,7 +927,7 @@ h3 {
 .footer {
     width: 100%;
     height: 25vh;
-    background-color: #171717;
+    background-color: #252525;
     border: 1px solid #171717;
     display: flex;
     align-items: center;
@@ -936,25 +936,49 @@ h3 {
 .footer-wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: auto;
     margin-top: auto;
     vertical-align: middle;
+    height: 100%;
+}
+
+.footer-icon{
+    width: 20%;
+    height: 100%;
+    content: "";
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon img{
+    width: 50%;
+    height: 100%;
+    color: white;
+    float: left;
 }
 
 .footer-main {
     color: #fff;
     display: flex;
-    align-items: center
+    align-items: center;
+    width: 40%;
+    justify-content: center;
 }
 
 .footer-media {
     padding: 0.5em;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .media-item img {
-    width: 4em;
-    height: 4em;
+    width: 100%;
+    height: 100%;
 }
 
 
