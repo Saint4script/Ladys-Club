@@ -1,6 +1,7 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from django.core.mail import EmailMultiAlternatives
+
 
 from ladiesclub.message import get_message
 from ladiesclub.models import News
@@ -29,7 +30,7 @@ def send_message(fio, num, user_email, questions):
         ['saint.4.script@gmail.com', 'lidiyapavlova@icloud.com']
     )
     message.attach_alternative(email_text, "text/html")
-    message.send()
+    message.send(fail_silently=False)
 
 
 def send_form(request):
@@ -38,6 +39,17 @@ def send_form(request):
     num = data.get('phone_number')
     email = data.get('email')
     questions = data.get('questions')
-    send_message(fio, num, email, questions)
 
-    return HttpResponse()
+    try:
+        send_message(fio, num, email, questions)
+        return JsonResponse(
+            {
+                'status': 'OK'
+            }
+        )
+    except:
+        return JsonResponse(
+                {
+                    'status': 'BAD'
+                }
+            )

@@ -14,7 +14,7 @@ function sendForm() {
             $('.gif-container').css('display', 'none');
             $('.gif-shadow').css('display', 'none');
             $('.fieldset')[0].disabled = false;
-            if (result["status"] == "Ok") {
+            if (result["status"] == "OK") {
                 alert("Создали");
             } else {
                 console.log(result.status_code);
