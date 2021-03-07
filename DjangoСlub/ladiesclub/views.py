@@ -26,7 +26,7 @@ def send_message(fio, num, user_email, questions):
         'Заявка на членство',
         email_text,
         'awesome.ladys@yandex.ru',
-        ['saint.4.script@gmail.com']
+        ['saint.4.script@gmail.com', 'lidiyapavlova@icloud.com']
     )
     message.attach_alternative(email_text, "text/html")
     message.send()

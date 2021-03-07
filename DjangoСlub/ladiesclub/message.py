@@ -20,10 +20,10 @@ def get_message():
                             </p>
                             
                             <ul>
-                                <li>ФИО тяночки: FIO</li>
-                                <li>Номер телефона тяночки: NUMBER</li>
-                                <li>Email тяночки: EMAIL</li>
-                                <li>Вопросы от тяночки: QUESTIONS</li>
+                                <li>ФИО: FIO</li>
+                                <li>Номер телефона: NUMBER</li>
+                                <li>Email: EMAIL</li>
+                                <li>Вопросы: QUESTIONS</li>
                             </ul>
                         
                         </div>
