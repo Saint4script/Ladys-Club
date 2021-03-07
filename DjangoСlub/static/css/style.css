@@ -951,6 +951,11 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url("https://www.stringsbymail.com/images/Dunlop-shell-Medium.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .footer-icon img{

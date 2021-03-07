@@ -17,7 +17,6 @@ function sendForm() {
             if (result["status"] == "OK") {
                 alert("Создали");
             } else {
-                console.log(result.status_code);
                 alert("что-то пошло не так");
             }
         })
