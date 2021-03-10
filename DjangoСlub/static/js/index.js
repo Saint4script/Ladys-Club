@@ -82,3 +82,19 @@ $(document).ready(function() {
 $(window).resize(() => {
     setSizeForNewsImages();
 })
+
+
+let backgroundChecker = false;
+
+window.addEventListener('scroll', function() {
+
+    if (pageYOffset > 2450 && !backgroundChecker) {
+        $("#main-background-fix").addClass('scrolled');
+        backgroundChecker = !backgroundChecker;
+    }
+
+    if (pageYOffset < 2450 && backgroundChecker) {
+        $("#main-background-fix").removeClass('scrolled');
+        backgroundChecker = !backgroundChecker;
+    }
+});

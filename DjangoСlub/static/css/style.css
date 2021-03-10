@@ -21,7 +21,7 @@ body {
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 1.6;
-    background-image: url("/static/res/pics/girl-wallpaper.jpg");
+    background-image: url("/static/res/pics/mmm.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,6 +29,16 @@ body {
     flex-direction: column;
     width: 100vw;
     overflow-x: hidden;
+}
+#main-background-fix {
+    background-image: url("/static/res/pics/tetecki.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main-background-fix.scrolled {
+    background-image: url("/static/res/pics/mmm.png");
 }
 
 *,
@@ -546,6 +556,13 @@ h3 {
     z-index: 1;
 }
 
+.bio-wrapper-lidia>h2{
+    width: 50%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1em;
+}
+
 .bio-wrapper-lidia {
     background-image: url("/static/res/pics/Lidiya.png");
     /* background-size: 100% 100%; */
@@ -558,10 +575,9 @@ h3 {
 
 .bio-wrapper-lidia .biography-block {
     padding: 2em 1em 2em 1em;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
     margin: 5em auto 5em 0;
     width: 55vw;
-    opacity: 0.7;
     z-index: 100;
     position: relative;
     /* display: none; */
@@ -569,10 +585,9 @@ h3 {
 
 .bio-wrapper-tanya .biography-block {
     padding: 2em 1em 2em 1em;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
     margin: 5em 0 5em auto;
     width: 55vw;
-    opacity: 0.7;
     z-index: 100;
     position: relative;
 }
