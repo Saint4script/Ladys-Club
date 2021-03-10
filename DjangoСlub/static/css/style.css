@@ -239,7 +239,7 @@ h3 {
 
 .mission-container {
     background-color: #fff;
-    background-color: var(--main-color);
+    /* background-color: var(--main-color);x */
     margin-top: 12em;
     padding: auto 5em;
     border-top: #fff 1px solid;
@@ -278,10 +278,7 @@ h3 {
     display: inline-block;
     padding: 10px;
     background-color: black;
-    /* text-align: center; */
     color: #fff;
-    /* font-size: 2em;
-    text-transform: uppercase; */
     letter-spacing: 2px;
 }
 
@@ -294,11 +291,7 @@ h3 {
 .mission-text {
     color: var(--mission-color);
     font-family: 'Poiret One', cursive;
-    /*'Poiret One', cursive*/
-    /*'Bellota Text', cursive*/
-    /* 'Roboto Condensed', cursive*/
-    /* 'Comfortaa', cursive*/
-    /* font-size: 1.2em; */
+    padding-top: 1em;
     font-weight: 600;
     text-align: center;
 }
@@ -306,11 +299,6 @@ h3 {
 .events {
     color: var(--mission-color);
     font-family: 'Poiret One', cursive;
-    /*'Poiret One', cursive*/
-    /*'Bellota Text', cursive*/
-    /* 'Roboto Condensed', cursive*/
-    /* 'Comfortaa', cursive*/
-    /* font-size: 1.2em; */
     font-weight: 300;
     text-align: center;
 }
