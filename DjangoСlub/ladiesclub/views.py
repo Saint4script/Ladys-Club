@@ -32,6 +32,9 @@ def send_message(fio, num, user_email, questions):
     message.attach_alternative(email_text, "text/html")
     message.send(fail_silently=False)
 
+def fb_verification(request):
+    return render(request, 'buuj8gpu3ztysvzodbq88jce733fly.html')
+
 
 def send_form(request):
     data = request.POST
